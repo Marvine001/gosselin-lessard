@@ -1,0 +1,11 @@
+.custom-img-height {
+    height: 33rem;
+     /* Ajustez la hauteur selon vos besoins */
+    /* object-fit: cover;  */  /* Pour s'assurer que l'image couvre la totalité de la zone */
+    width: 100%; /* Pour s'assurer que l'image prend toute la largeur */
+  }
+
+  .custom_text {
+    font-size: large !important;
+  font-family: 'Open Sans', sans-serif !important;
+  }

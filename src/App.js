@@ -9,11 +9,11 @@ import About from './views/pages/about us/About'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
       <Route path="/" element={<Home />} />
-        <Route path="about us" element={<About />} />
-        <Route path="join us" element={<Join />} /> 
+        <Route path="/about_us" element={<About />} />
+        <Route path="/join_us" element={<Join />} /> 
       </Routes>
     </Router>
   );

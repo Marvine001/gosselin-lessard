@@ -1,0 +1,56 @@
+.nav-link {
+  color: #ffffff !important;
+}
+
+/* .nav-link:hover {
+    color: #cccccc !important;
+  } */
+
+.nav-link-custom {
+  position: relative;
+  transition: color 0.3s;
+  font-weight: bold;
+  font-size: large !important;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 25px !important;
+}
+
+/* Pour la ligne blanche en dessous de chaque link */
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: white;
+  bottom: -7.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* Pour le bouton de traduction */
+.btn-circle {
+  border-radius: 50% !important; /* Rend le bouton circulaire */
+  background-color: black; /* Fond noir */
+  color: white !important; /* Texte blanc */
+  width: 40px; /* Taille du bouton */
+  height: 40px; /* Taille du bouton */
+  border: none !important; /* Pas de bordure */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; /* Police Open Sans */
+}
+
+.btn-circle:hover {
+  opacity: 0.8; /* Légère réduction de l'opacité au survol */
+}
+
+.marge {
+  margin-left: 1em;
+}
