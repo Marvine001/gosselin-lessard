@@ -19,7 +19,42 @@
 .bg-gray {
   background-color: #d9d9d9;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 
+.justify {
+  text-align: justify;
+}
+
+.custom_text-family {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* Media query pour appareils mobiles */
+@media (max-width: 768px) {
+  .image-query {
+    height: 15rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .image-query {
+    height: 20rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
+    max-width: 100% !important;
+  }
+}
+
+/* custom mon card link */
+.custom-card-link {
+  color: inherit; /* Utiliser la couleur héritée du parent */
+  text-decoration: none; /* Enlever la décoration de texte */
+}
+
+.custom-card-link:hover {
+  color: inherit; /* Utiliser la couleur héritée du parent lors du survol */
+  text-decoration: none; /* Enlever la décoration de texte lors du survol */
+}
 
 /* .App {
   text-align: center;

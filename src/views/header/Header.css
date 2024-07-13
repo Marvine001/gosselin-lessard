@@ -1,23 +1,20 @@
+
+
+/* Pour la ligne blanche en dessous de chaque link */
 .nav-link {
   color: #ffffff !important;
 }
 
-/* .nav-link:hover {
-    color: #cccccc !important;
-  } */
-
 .nav-link-custom {
   position: relative;
   transition: color 0.3s;
-  font-weight: bold;
   font-size: large !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-right: 25px !important;
 }
 
-/* Pour la ligne blanche en dessous de chaque link */
 .nav-link-custom::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 5px;
@@ -28,6 +25,10 @@
   transition: width 0.3s;
 }
 .nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.nav-link-custom.active::after {
   width: 100%;
 }
 
@@ -44,7 +45,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif; /* Police Open Sans */
+  font-family: "Open Sans", sans-serif; /* Police Open Sans */
 }
 
 .btn-circle:hover {
@@ -53,4 +54,24 @@
 
 .marge {
   margin-left: 1em;
+}
+
+/* Pour la liste déroulante */
+.dropdown-item-custom {
+  background-color: white; /* Fond blanc */
+  color: black; /* Texte noir */
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  font-family: "Open Sans", sans-serif; /* Police Open Sans */
+}
+
+.nav-link-custom .dropdown-item-custom:hover {
+  background-color: blue; /* Fond bleu au survol */
+  color: white; /* Texte blanc au survol */
+}
+
+.dropdown-item-custom:hover {
+  background-color: blue; /* Fond bleu au survol */
+  color: white; /* Texte blanc au survol */
 }

@@ -1,11 +1,14 @@
-.custom-img-height {
-    height: 33rem;
-     /* Ajustez la hauteur selon vos besoins */
-    /* object-fit: cover;  */  /* Pour s'assurer que l'image couvre la totalité de la zone */
-    width: 100%; /* Pour s'assurer que l'image prend toute la largeur */
-  }
+.custom-img-height-footer {
+  height: 33rem; /* Ajustez la hauteur selon vos besoins */
+  /* object-fit: cover;  */ /* Pour s'assurer que l'image couvre la totalité de la zone */
+  /* Pour s'assurer que l'image prend toute la largeur */
+  max-width: 100%;
+}
 
-  .custom_text {
-    font-size: large !important;
-  font-family: 'Open Sans', sans-serif !important;
+/* Media query pour appareils mobiles */
+@media (max-width: 768px) {
+  .custom-img-height-footer {
+    height: auto; /* La hauteur sera automatiquement ajustée sur les mobiles */
+    max-width: 100%;
   }
+}

@@ -1,0 +1,70 @@
+/* Pour enlever les flèches du carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* Pour ajouter un div avec un background noir */
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-30%, -60%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  text-align: start !important;
+  height: 13rem;
+  width: 23rem;
+}
+
+/* Styles pour les indicateurs du premier carrousel */
+.carousel .carousel-indicators [data-bs-target] {
+  width: 12px; /* Largeur des indicateurs */
+  height: 12px; /* Hauteur des indicateurs */
+  border-radius: 50%; /* Forme circulaire */
+}
+
+.carousel .carousel-indicators .active {
+  background-color: blue;
+}
+
+/* Pour modifier la hauteur de l'image du premier carousel */
+.carousel img {
+    width: 100%; 
+    height: 450px; /* Ajustez la hauteur comme nécessaire */
+    object-fit: cover; /* Optionnel: ajuste le comportement de l'image */
+}
+
+/* Media query pour appareils mobiles */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 15rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .carousel img {
+    height: 20rem !important; /* La hauteur sera automatiquement ajustée sur les tablettes */
+    max-width: 100% !important;
+  }
+}
+
+/* pour modifier la hauteur du second carousel */
+.custom-img-height {
+    height: 25rem; /* Ajustez la hauteur selon vos besoins */
+  /* object-fit: cover;  */ /* Pour s'assurer que l'image couvre la totalité de la zone */
+  max-width: 100%; /* Pour s'assurer que l'image prend toute la largeur */
+}
+
+.image-custom-logo-bl {
+  max-width: 100%; /* Pour s'assurer que l'image prend toute la largeur */
+}
+
+
+
+
+
+
+
+
