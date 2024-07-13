@@ -16,7 +16,7 @@ class Industriel extends Component {
                     <Row>
                         <Col md={12} className="image-container-industrial image-query">
                             <div className="image-title-industrial">
-                                <h2 className="text-white uppercase fw-bold fs-1">Nos immeubles industriels</h2>
+                                <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos immeubles industriels</h2>
                             </div>
                         </Col>
                     </Row>

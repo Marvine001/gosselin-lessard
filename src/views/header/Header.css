@@ -32,6 +32,17 @@
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .nav-link-custom:hover::after {
+    width: 0%;
+  }
+  
+  .nav-link-custom.active::after {
+    width: 0%;
+  }
+
+}
+
 /* Pour le bouton de traduction */
 .btn-circle {
   border-radius: 50% !important; /* Rend le bouton circulaire */
@@ -71,7 +82,3 @@
   color: white; /* Texte blanc au survol */
 }
 
-.dropdown-item-custom:hover {
-  background-color: blue; /* Fond bleu au survol */
-  color: white; /* Texte blanc au survol */
-}

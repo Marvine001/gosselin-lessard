@@ -15,7 +15,7 @@ class Terrain extends Component {
                     <Row>
                         <Col md={12} className="image-container-land image-query">
                             <div className="image-title-land">
-                                <h2 className="text-white uppercase fw-bold fs-1">Nos terrains</h2>
+                                <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos terrains</h2>
                             </div>
                         </Col>
                     </Row>

@@ -35,13 +35,13 @@
 @media (max-width: 768px) {
   .image-query {
     height: 15rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
-    max-width: 100% !important;
+    max-width: 100% ;
   }
 }
-@media (max-width: 992px) {
+@media (min-width:768px) and (max-width: 992px) {
   .image-query {
     height: 20rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
-    max-width: 100% !important;
+    max-width: 100% ;
   }
 }
 
@@ -54,6 +54,15 @@
 .custom-card-link:hover {
   color: inherit; /* Utiliser la couleur héritée du parent lors du survol */
   text-decoration: none; /* Enlever la décoration de texte lors du survol */
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+@media (max-width: 576px) {
+  .nowrap {
+    white-space: normal !important;
+  }
 }
 
 /* .App {

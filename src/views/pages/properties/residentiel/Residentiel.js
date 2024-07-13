@@ -16,7 +16,7 @@ class Residentiel extends Component {
                     <Row>
                         <Col md={12} className="image-container-residential image-query">
                             <div className="image-title-residential">
-                                <h2 className="text-white uppercase fw-bold fs-1">Nos immeubles résidentiels</h2>
+                                <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos immeubles résidentiels</h2>
                             </div>
                         </Col>
                     </Row>

@@ -15,7 +15,7 @@ class Commercial extends Component {
                     <Row>
                         <Col md={12} className="image-container-commercial image-query">
                             <div className="image-title-commercial">
-                                <h2 className="text-white uppercase fw-bold fs-1">Nos immeubles commerciaux</h2>
+                                <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos immeubles commerciaux</h2>
                             </div>
                         </Col>
                     </Row>
