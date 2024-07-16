@@ -82,3 +82,41 @@
   color: white; /* Texte blanc au survol */
 }
 
+/* For promenade page */
+.nav-link-custom-promenade {
+  position: relative;
+  transition: color 0.3s;
+  font-size: large !important;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 25px !important;
+}
+
+.nav-link-custom-promenade::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: white;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+.nav-link-custom-promenade:hover::after {
+  width: 100%;
+}
+
+.nav-link-custom-promenade.active::after {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .nav-link-custom-promenade:hover::after {
+    width: 0%;
+  }
+  
+  .nav-link-custom-promenade.active::after {
+    width: 100%;
+  }
+
+}

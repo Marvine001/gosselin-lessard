@@ -46,17 +46,17 @@ class Header extends Component {
           <Container fluid className="justify-content-center">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mx-auto">
+              <Nav className="mx-auto uppercase">
                 <Nav.Link href="/" className={`text-white nav-link-custom titre_nav ${activePage === '/' ? 'active' : ''}`} onClick={() => this.handleNavClick('/')}>
                   ACCUEIL
                 </Nav.Link>
-                <NavDropdown title="PROPRIETES" id="basic-nav-dropdown"
+                <NavDropdown title="Propriétés" id="basic-nav-dropdown"
                   className={`text-white nav-link-custom ${['/residential', '/commercial', '/industrial', '/land'].includes(activePage) ? 'active' : ''}`}>
                   <NavDropdown.Item href="/residential" className="dropdown-item-custom" onClick={() => this.handleNavClick('/residential')}>
-                    RESIDENTIEL
+                    Résidentiel
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/commercial" className="dropdown-item-custom" onClick={() => this.handleNavClick('/commercial')}>
-                    COMMERCIAL
+                    Commercial
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/industrial" className="dropdown-item-custom" onClick={() => this.handleNavClick('/industrial')}>
                     INDUSTRIEL
@@ -66,7 +66,7 @@ class Header extends Component {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/about_us" className={`text-white nav-link-custom ${activePage === '/about_us' ? 'active' : ''}`} onClick={() => this.handleNavClick('/about_us')}>
-                  A PROPOS
+                  à propos
                 </Nav.Link>
                 <Nav.Link href="/join_us" className={`text-white nav-link-custom ${activePage === '/join_us' ? 'active' : ''}`}
                   onClick={() => this.handleNavClick('/join_us')}>

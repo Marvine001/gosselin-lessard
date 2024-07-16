@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
-import './Residentiel.css'
-import Header from '../../../header/Header'
-import Footer from '../../../footer/Footer'
+import './Promenade.css'
+import HeaderBl from '../../header/Header_bl';
+import Footer from '../../footer/Footer';
+
 import { Row, Col, Container, Card } from 'react-bootstrap'
 
 
-class Residentiel extends Component {
+class Promenade extends Component {
 
     render() {
         return (
             <div>
-                <Header />
+                <HeaderBl />
 
                 <div className='bg-black'>
                     <Row>
-                        <Col md={12} className="image-container-residential image-query">
-                            <div className="image-title-residential">
+                        <Col md={12} className="image-container-promenade image-query">
+                            <div className="image-title-promenade">
                                 <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos immeubles résidentiels</h2>
                             </div>
                         </Col>
@@ -25,14 +26,14 @@ class Residentiel extends Component {
                             {Array.from({ length: 9 }).map((_, idx) => (
                                 <Col key={idx} className='p-4'>
                                     <Card className='uppercase'>
-                                        <Card.Link href="/ForResidential" className='custom-card-link'>
+                                        <Card.Link href="/ForPromenade" className='custom-card-link'>
                                             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/properties/image-properties.png`} />
                                             <Card.Body className='bg-blue'>
                                                 <Card.Title className='text-white text-center'>Maison Terre-neuve</Card.Title>
                                             </Card.Body>
                                             <Card.Body className='bg-gray'>
                                                 <Card.Text>
-                                                    Thetford-mines <br></br> 78 Rue Boily
+                                                    Black Lake <br></br> 78 Rue Boily
                                                 </Card.Text>
                                                 <Card.Text>
                                                     <Row>
@@ -59,4 +60,4 @@ class Residentiel extends Component {
         );
     }
 }
-export default Residentiel;
+export default Promenade;

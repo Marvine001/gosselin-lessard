@@ -23,7 +23,7 @@ class Home extends Component {
                                     />
                                     <div className="carousel-caption d-none d-md-block custom-caption p-4">
                                         <h5 className='mt-3 mb-4'> GOSSELIN LESSARD <br /> IMMOBILIER, <br /> UNE QUESTION DE VALEURS</h5>
-                                        <button className="btn btn-primary">En savoir plus</button>
+                                        <button href="/about_us" className="btn btn-primary">En savoir plus</button>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -34,7 +34,7 @@ class Home extends Component {
                                     />
                                     <div className="carousel-caption d-none d-md-block custom-caption p-4">
                                         <h5 className='mt-3 mb-4'> GOSSELIN LESSARD <br /> IMMOBILIER, <br /> UNE QUESTION DE VALEURS</h5>
-                                        <button className="btn btn-primary">En savoir plus</button>
+                                        <button href="/about_us" className="btn btn-primary">En savoir plus</button>
                                     </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
@@ -197,7 +197,7 @@ class Home extends Component {
                                     de la ville de Thetford. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur
                                     mesure.
                                 </p>
-                                <Button href='#promenade' variant="primary">En savoir plus</Button>
+                                <Button href='/promenade' variant="primary">En savoir plus</Button>
                             </Col>
                             <Col lg={5} className='mt-5 mb-3 d-none d-lg-block'>
                                 <img

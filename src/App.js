@@ -14,6 +14,8 @@ import ForCommercial from './views/pages/properties/commercial/ForCommercial';
 import ForIndustriel from './views/pages/properties/industriel/ForIndustriel';
 import ForTerrain from './views/pages/properties/terrain/ForTerrain';
 import ScrollToTop from './scrollToTop/ScrollToTop';
+import Promenade from './views/pages/promenade/Promenade';
+import ForPromenade from './views/pages/promenade/ForPromenade';
 
 
 function App() {
@@ -25,13 +27,15 @@ function App() {
           <Route path="/about_us" element={<About />} />
           <Route path="/join_us" element={<Join />} />
           <Route path="/residential" element={<Residentiel />} />
-          <Route path="/forResidential" element={<ForResidentiel />} />
+          <Route path="/ForResidential" element={<ForResidentiel />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/ForCommercial" element={<ForCommercial />} />
           <Route path="/industrial" element={<Industriel />} />
           <Route path="/ForIndustrial" element={<ForIndustriel />} />
           <Route path="/land" element={<Terrain />} />
           <Route path="/ForLand" element={<ForTerrain />} />
+          <Route path="/promenade" element={<Promenade />} />
+          <Route path="/ForPromenade" element={<ForPromenade />} />
         </Routes>
       </Router>
 
