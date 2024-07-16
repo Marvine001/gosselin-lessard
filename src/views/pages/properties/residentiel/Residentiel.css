@@ -1,3 +1,4 @@
+/* For Residentiel.js */
 .image-container-residential {
   position: relative;
   background-image: url("../../../../../public/images/properties/banner-properties.png");
@@ -21,3 +22,5 @@
   justify-content: space-between;
   
 }
+
+

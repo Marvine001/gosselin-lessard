@@ -1,5 +1,5 @@
 /* Pour l'image en background */
-.image-container {
+.image-container-about {
   position: relative;
   background-image: url("../../../../public/images/about_us/apropos.png");
   background-size: cover;
@@ -34,4 +34,48 @@
   fill: white;
   width: 15px;
   height: 15px;
+}
+
+
+/* For page ForResidentiel.js etc. */
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+.second-carousel {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.second-carousel .image-containers {
+  flex: 0 0 auto;
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 10px;
+  transition: filter 0.3s ease;
+}
+
+.second-carousel .image-containers img {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.second-carousel .image-containers.active img {
+  border: 2px solid blue; /* Highlight active image */
+}
+
+.second-carousel .image-containers.inactive img {
+  filter: blur(0.8px); /* Blur inactive images */
+}
+
+
+.icon-1 {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-2 {
+  width: 35px;
+  height: 35px;
 }

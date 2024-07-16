@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Col, Container, Row, Card } from 'react-bootstrap'
 import Header from '../../header/Header'
 import Footer from '../../footer/Footer'
-import { ReactComponent as FacebookIcon } from '../../../icons/facebook.svg';
-import { ReactComponent as MailIcon } from '../../../icons/mail.svg';
+import { FaFacebookSquare } from "react-icons/fa"
+import { MdAlternateEmail } from "react-icons/md"
 import './About.css'
 
 
@@ -15,7 +15,7 @@ class About extends Component {
                 <Header />
                 <div className='bg-black'>
                     <Row>
-                        <Col md={12} className="image-container image-query">
+                        <Col md={12} className="image-container-about image-query">
                             <div className="image-title">
                                 <h2 className="text-white uppercase fw-bold fs-1">A propos</h2>
                             </div>
@@ -47,10 +47,10 @@ class About extends Component {
                                                 <Col xs={7} md={8} className='d-flex justify-content-start fw-semibold'> Président </Col>
                                                 <Col xs={5} md={4} className="d-flex justify-content-around">
                                                     <div className="icon-circle">
-                                                        <FacebookIcon className="icon" />
+                                                        <FaFacebookSquare className="icon" />
                                                     </div>
                                                     <div className="icon-circle">
-                                                        <MailIcon className="icon" />
+                                                        <MdAlternateEmail className="icon" />
                                                     </div>
                                                 </Col>  {/* inserer svg facebook et mail */}
                                             </Row>
@@ -68,10 +68,10 @@ class About extends Component {
                                                 <Col xs={7} md={8} className='d-flex justify-content-start fw-semibold'> Président </Col>
                                                 <Col  xs={5} md={4} className="d-flex justify-content-around">
                                                     <div className="icon-circle">
-                                                        <FacebookIcon className="icon" />
+                                                        <FaFacebookSquare className="icon" />
                                                     </div>
                                                     <div className="icon-circle">
-                                                        <MailIcon className="icon" />
+                                                        <MdAlternateEmail className="icon" />
                                                     </div>
                                                 </Col> 
                                             </Row>
