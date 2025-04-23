@@ -45,7 +45,6 @@ class Commercial extends Component {
                         </Row>
                     </Container>
                 </div>
-
                 <Footer />
             </div>
         );

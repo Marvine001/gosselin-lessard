@@ -4,13 +4,14 @@ import Footer from '../../footer/Footer'
 import './Home.css'
 import { Col, Container, Row, Button, Carousel, Card } from 'react-bootstrap'
 
+
 //create Home class
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='bg-black'>
                 <Header />
-                <div className='bg-black'>
+                <div >
 
                     <Row>
                         <Col md={12} >
@@ -91,8 +92,8 @@ class Home extends Component {
                                         <Card>
                                             <Card.Link href="/residential" className='custom-card-link'>
                                                 <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`} className='custom-img-height img-fluid' />
-                                                <Card.Body className='bg-blue text-white text-center '>
-                                                    <Card.Text href="/join_us" className='fw-semibold fs-5 uppercase '>Immeuble résidentiel</Card.Text>
+                                                <Card.Body className='bg-blue text-white text-center'>
+                                                    <Card.Text className='fw-semibold fs-5 uppercase'>Immeuble résidentiel</Card.Text>
                                                 </Card.Body>
                                             </Card.Link>
                                         </Card>
@@ -102,7 +103,7 @@ class Home extends Component {
                                             <Card.Link href="/commercial" className='custom-card-link'>
                                                 <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`} className='custom-img-height img_fluid' />
                                                 <Card.Body className='bg-blue text-white text-center'>
-                                                    <Card.Text href="#Commercial" className='fw-semibold fs-5 uppercase '>Immeuble commercial</Card.Text>
+                                                    <Card.Text className='fw-semibold fs-5 uppercase'>Immeuble commercial</Card.Text>
                                                 </Card.Body>
                                             </Card.Link>
                                         </Card>
@@ -112,10 +113,9 @@ class Home extends Component {
                                             <Card.Link href="/industrial" className='custom-card-link'>
                                                 <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`} className='custom-img-height img_fluid' />
                                                 <Card.Body className='bg-blue text-white text-center'>
-                                                    <Card.Text href="#Industriel" className='fw-semibold fs-5 uppercase '>Immeuble industriel</Card.Text>
+                                                    <Card.Text className='fw-semibold fs-5 uppercase '>Immeuble industriel</Card.Text>
                                                 </Card.Body>
                                             </Card.Link>
-
                                         </Card>
                                     </Carousel.Item>
                                     <Carousel.Item>
@@ -123,16 +123,12 @@ class Home extends Component {
                                             <Card.Link href="/land" className='custom-card-link'>
                                                 <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`} className='custom-img-height img_fluid' />
                                                 <Card.Body className='bg-blue text-white text-center'>
-                                                    <Card.Text href="#Industriel" className='fw-semibold fs-5 uppercase '>Terrain</Card.Text>
+                                                    <Card.Text className='fw-semibold fs-5 uppercase'>Terrain</Card.Text>
                                                 </Card.Body>
                                             </Card.Link>
-
                                         </Card>
                                     </Carousel.Item>
-
-
                                 </Carousel>
-
                             </Col>
                         </Row>
 
@@ -208,7 +204,6 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-
                     <Container fluid className='bg-gray mt-4'>
                         <Row>
                             <Col md={12} className='mx-auto mt-5 mb-4 text-center'>
@@ -219,7 +214,6 @@ class Home extends Component {
                             </Col>
                         </Row>
                     </Container>
-
                 </div>
                 <Footer />
             </div>

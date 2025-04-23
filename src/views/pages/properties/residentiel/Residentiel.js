@@ -36,7 +36,7 @@ class Residentiel extends Component {
                                                 </Card.Text>
                                                 <Card.Text>
                                                     <Row>
-                                                        <Col xs={8} md={8} className='fw-bold'>$$</Col>
+                                                        <Col xs={8} md={8} className='fw-bold'></Col>
                                                         <Col xs={4} md={4}>
                                                             <div className="icons">
                                                                 <span role="img" aria-label="beds">🛏️ 3</span>

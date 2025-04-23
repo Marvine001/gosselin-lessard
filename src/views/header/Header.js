@@ -40,18 +40,19 @@ class Header extends Component {
                 alt="Gosselin Lessard"
               />
             </Navbar.Brand>
+
           </Container>
         </Navbar>
         <Navbar bg="blue" variant="blue" expand="md">
-          <Container fluid className="justify-content-center">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Container fluid className="">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className='mx-auto' />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mx-auto uppercase">
-                <Nav.Link href="/" className={`text-white nav-link-custom titre_nav ${activePage === '/' ? 'active' : ''}`} onClick={() => this.handleNavClick('/')}>
+              <Nav className="uppercase mx-auto">
+                <Nav.Link href="/" className={`text-white px-3 nav-link-custom titre_nav ${activePage === '/' ? 'active' : ''}`} onClick={() => this.handleNavClick('/')}>
                   ACCUEIL
                 </Nav.Link>
                 <NavDropdown title="Propriétés" id="basic-nav-dropdown"
-                  className={`text-white nav-link-custom ${['/residential', '/commercial', '/industrial', '/land'].includes(activePage) ? 'active' : ''}`}>
+                  className={`text-white px-3 nav-link-custom ${['/residential', '/commercial', '/industrial', '/land'].includes(activePage) ? 'active' : ''}`}>
                   <NavDropdown.Item href="/residential" className="dropdown-item-custom" onClick={() => this.handleNavClick('/residential')}>
                     Résidentiel
                   </NavDropdown.Item>
@@ -65,25 +66,41 @@ class Header extends Component {
                     TERRAIN
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/about_us" className={`text-white nav-link-custom ${activePage === '/about_us' ? 'active' : ''}`} onClick={() => this.handleNavClick('/about_us')}>
+                <Nav.Link href="/about_us" className={`text-white px-3 nav-link-custom ${activePage === '/about_us' ? 'active' : ''}`} onClick={() => this.handleNavClick('/about_us')}>
                   à propos
                 </Nav.Link>
-                <Nav.Link href="/join_us" className={`text-white nav-link-custom ${activePage === '/join_us' ? 'active' : ''}`}
+                <Nav.Link href="/join_us" className={`text-white px-3 nav-link-custom ${activePage === '/join_us' ? 'active' : ''}`}
                   onClick={() => this.handleNavClick('/join_us')}>
                   CONTACTEZ-NOUS
                 </Nav.Link>
+                <Nav.Link href='#sale' className={`d-md-none px-3 nav-link-custom ${activePage === '/join_us' ? 'active' : ''}`}  >
+                  
+                    A LOUER
+                  
+                </Nav.Link>
+                <Nav.Link href='#sale' className='d-none d-md-block'>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/forRent.png`}
+                    alt="À LOUER"
+                    className="img-fluid a-louer"
+                    style={{ width: '150px' }} // Ajustez la largeur et l'alignement vertical si nécessaire
+                  />
+                </Nav.Link>
+
+              </Nav>
+              <Nav className='pe-5 '>
+
                 {/* Button pour changer la langue */}
-                <Button variant="dark" className="btn-circle marge" onClick={this.toggleLanguage}>
+                <Button variant="dark" className="btn-circle " onClick={this.toggleLanguage}>
                   {language}
                 </Button>
-                {/* <Nav.Link href="#en" className="text-white">EN</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
           </Container>
+
         </Navbar>
       </nav>
     );
   }
 }
-
 export default Header;

@@ -10,7 +10,7 @@
   transition: color 0.3s;
   font-size: large !important;
   font-family: "Open Sans", sans-serif;
-  margin-right: 25px !important;
+  /* margin-right: 25px !important; */
 }
 
 .nav-link-custom::after {
@@ -63,9 +63,6 @@
   opacity: 0.8; /* Légère réduction de l'opacité au survol */
 }
 
-.marge {
-  margin-left: 1em;
-}
 
 /* Pour la liste déroulante */
 .dropdown-item-custom {
@@ -119,4 +116,26 @@
     width: 100%;
   }
 
+}
+
+
+
+
+/* Header.css */
+.a-louer {
+  position: absolute;
+  top: 3px; /* Ajustez cette valeur pour positionner l'image au-dessus de la navbar */
+  left: 70%; /* Centrer horizontalement */
+  /* width: 150px;  Ajustez la largeur selon vos besoins */
+  z-index: 1000;  /* Un z-index élevé pour s'assurer que l'image est au-dessus de la navbar */
+}
+
+@media (min-width: 768x) and (max-width: 991px) {
+  .nav-link .a-louer {
+    position: absolute !important;
+    top: 3px !important; /* Ajustez cette valeur pour positionner l'image au-dessus de la navbar */
+    left: 80% !important; /* Centrer horizontalement */
+   /* width: 150px;  Ajustez la largeur selon vos besoins */
+    z-index: 1000;  /* Un z-index élevé pour s'assurer que l'image est au-dessus de la navbar */
+  }
 }

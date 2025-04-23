@@ -16,11 +16,14 @@ import ForTerrain from './views/pages/properties/terrain/ForTerrain';
 import ScrollToTop from './scrollToTop/ScrollToTop';
 import Promenade from './views/pages/promenade/Promenade';
 import ForPromenade from './views/pages/promenade/ForPromenade';
+import NotFoundPage from './connectedOrNot/NotFoundPage';
+import VerifyConnected from './connectedOrNot/VerifyConneted';
 
 
 function App() {
   return (
-    <div>
+    <>
+      <VerifyConnected />
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,12 +39,12 @@ function App() {
           <Route path="/ForLand" element={<ForTerrain />} />
           <Route path="/promenade" element={<Promenade />} />
           <Route path="/ForPromenade" element={<ForPromenade />} />
+          <Route path="/404" element={<NotFoundPage/>} />
         </Routes>
       </Router>
 
       <ScrollToTop />
-    </div>
-
+    </>
 
   );
 }

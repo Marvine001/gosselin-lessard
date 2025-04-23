@@ -91,10 +91,7 @@ class ForIndustriel extends Component {
                     <Container fluid>
                         <Row className='px-4'>
                             <Col md={12}>
-                                <h3 className='text-center text-white uppercase fw-semibold'> Industriel à louer - Thetford mines </h3>
-                            </Col>
-                            <Col md={12}>
-                                <p className='text-center text-white uppercase'> 15 $ pied carré par année + TPS/TVQ </p>
+                                <h3 className='text-center text-white uppercase fw-semibold'> Industriel- Thetford mines </h3>
                             </Col>
                         </Row>
 
@@ -179,6 +176,8 @@ class ForIndustriel extends Component {
                                     <span className='fw-semibold fs-5'>Nombre de pièce: 0</span>
                                     <br />
                                     <span className='fw-semibold fs-5'>Pied de carré disponible: 788 Pi²</span>
+                                    <br />
+                                    <span className='fw-semibold fs-5'>Disponibilité</span>
                                 </p>
 
                             </Col>
@@ -206,7 +205,7 @@ class ForIndustriel extends Component {
                             {/* Your other component code */}
                             <Row className='pt-5 px-3 text-white '>
                                 <Col xs={9} md={9} lg={9} className='uppercase ps-5'>
-                                    <h3>Particularités du terrain</h3>
+                                    <h3>Descriptions</h3>
                                 </Col>
                                 <Col xs={3} md={3} lg={3} className=''>
                                     <div className='icon-container'>
@@ -231,146 +230,6 @@ class ForIndustriel extends Component {
                                 <Col xs={12} md={12} lg={12} className='px-4'>
                                     <Collapse in={sections.terrain}>
                                         <div id="terrain-collapse-text">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </Collapse>
-                                </Col>
-                            </Row>
-
-                            <Row className='p-3 text-white '>
-                                <Col xs={9} md={9} lg={9} className='uppercase ps-5'>
-                                    <h3>Particularités du batiment</h3>
-                                </Col>
-                                <Col xs={3} md={3} lg={3} className=''>
-                                    <div className='icon-container'>
-                                        {sections.batiment ? (
-                                            <IoIosRemoveCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('batiment')}
-                                                aria-controls="batiment-collapse-text"
-                                                aria-expanded={sections.batiment}
-                                            />
-                                        ) : (
-                                            <IoIosAddCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('batiment')}
-                                                aria-controls="batiment-collapse-text"
-                                                aria-expanded={sections.batiment}
-                                            />
-                                        )}
-                                    </div>
-                                </Col>
-                                <hr className='mt-4 border-5'></hr>
-                                <Col xs={12} md={12} lg={12} className='px-4'>
-                                    <Collapse in={sections.batiment}>
-                                        <div id="batiment-collapse-text">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </Collapse>
-                                </Col>
-                            </Row>
-
-                            <Row className='p-3 text-white '>
-                                <Col xs={9} md={9} lg={9} className='uppercase ps-5'>
-                                    <h3>Détails des pièces</h3>
-                                </Col>
-                                <Col xs={3} md={3} lg={3} className=''>
-                                    <div className='icon-container'>
-                                        {sections.pieces ? (
-                                            <IoIosRemoveCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('pieces')}
-                                                aria-controls="pieces-collapse-text"
-                                                aria-expanded={sections.pieces}
-                                            />
-                                        ) : (
-                                            <IoIosAddCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('pieces')}
-                                                aria-controls="pieces-collapse-text"
-                                                aria-expanded={sections.pieces}
-                                            />
-                                        )}
-                                    </div>
-                                </Col>
-                                <hr className='mt-4 border-5'></hr>
-                                <Col xs={12} md={12} lg={12} className='px-4'>
-                                    <Collapse in={sections.pieces}>
-                                        <div id="pieces-collapse-text">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </Collapse>
-                                </Col>
-                            </Row>
-
-                            <Row className='p-3 text-white '>
-                                <Col xs={9} md={9} lg={9} className='uppercase ps-5'>
-                                    <h3>Caractéristiques</h3>
-                                </Col>
-                                <Col xs={3} md={3} lg={3} className=''>
-                                    <div className='icon-container'>
-                                        {sections.caracteristiques ? (
-                                            <IoIosRemoveCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('caracteristiques')}
-                                                aria-controls="caracteristiques-collapse-text"
-                                                aria-expanded={sections.caracteristiques}
-                                            />
-                                        ) : (
-                                            <IoIosAddCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('caracteristiques')}
-                                                aria-controls="caracteristiques-collapse-text"
-                                                aria-expanded={sections.caracteristiques}
-                                            />
-                                        )}
-                                    </div>
-                                </Col>
-                                <hr className='mt-4 border-5'></hr>
-                                <Col xs={12} md={12} lg={12} className='px-4'>
-                                    <Collapse in={sections.caracteristiques}>
-                                        <div id="caracteristiques-collapse-text">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </Collapse>
-                                </Col>
-                            </Row>
-
-                            <Row className='pb-5 px3 text-white '>
-                                <Col xs={9} md={9} lg={9} className='uppercase ps-5'>
-                                    <h3>Inclusions & Exclusions</h3>
-                                </Col>
-                                <Col xs={3} md={3} lg={3} className=''>
-                                    <div className='icon-container'>
-                                        {sections.inclusionsExclusions ? (
-                                            <IoIosRemoveCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('inclusionsExclusions')}
-                                                aria-controls="inclusionsExclusions-collapse-text"
-                                                aria-expanded={sections.inclusionsExclusions}
-                                            />
-                                        ) : (
-                                            <IoIosAddCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('inclusionsExclusions')}
-                                                aria-controls="inclusionsExclusions-collapse-text"
-                                                aria-expanded={sections.inclusionsExclusions}
-                                            />
-                                        )}
-                                    </div>
-                                </Col>
-                                <hr className='mt-4 border-5'></hr>
-                                <Col xs={12} md={12} lg={12} className='px-4'>
-                                    <Collapse in={sections.inclusionsExclusions}>
-                                        <div id="inclusionsExclusions-collapse-text">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                                             terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                                             labore wes anderson cred nesciunt sapiente ea proident.
