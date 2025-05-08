@@ -1,0 +1,136 @@
+{
+    "global": {
+      "contactButton": "Contactez-nous",
+      "needMoreInfo": "Besoin de plus d'informations ?",
+      "loadingText": "Propriété non trouvée. Redirection...",
+      "propertyDetailsLabel": "Détails"
+    },
+    "home": {
+      "hero": {
+        "title": "GOSSELIN LESSARD \nIMMOBILIER, \nUNE QUESTION DE VALEURS",
+        "buttonText": "En savoir plus"
+      },
+      "about": {
+        "title": "GOSSELIN LESSARD IMMOBILIER",
+        "subtitle": "Nous c'est",
+        "experience": "XX année d'expérience dans la gestion immobilière",
+        "description": "Active dans le domaine de la gestion immobilière au Québec depuis plus de xx ans, notre société propose à ses clients d'affaires et résidentiels des espaces locatifs situés dans les secteurs les plus attrayants de la ville de Thetford. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure.",
+        "buttonText": "En savoir plus"
+      },
+      "properties": {
+        "title": "Propriétés",
+        "subtitle": "Nos",
+        "types": [
+          {
+            "type": "Immeubles résidentiels",
+            "link": "/residential"
+          },
+          {
+            "type": "Immeubles commerciaux",
+            "link": "/commercial"
+          },
+          {
+            "type": "Immeubles industriels",
+            "link": "/industrial"
+          },
+          {
+            "type": "Terrains",
+            "link": "/land"
+          }
+        ]
+      },
+      "promenade": {
+        "title": "Promenade Black Lake",
+        "description": "Nous possédons PROMENADE BLACK LAKE. Active dans le domaine de la gestion immobilière de Québec depuis plus de xx ans, notre société propose à ses clients d'affaires et résidentiels des espaces locatifs situés dans les secteurs les plus attrayants et animés de la ville de Thetford. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure. Nous possédons PROMENADE BLACK LAKE. Active dans le domaine de la gestion immobilière de Québec depuis plus de xx ans, notre société propose à ses clients d'affaires et résidentiels des espaces locatifs situés dans les secteurs les plus attrayants et animés de la ville de Thetford. Nous sommes attentifs à vos besoins et soucieux de vous offrir un service sur mesure.",
+        "buttonText": "En savoir plus"
+      },
+      "contactCTA": {
+        "title": "Besoin de plus d'informations ?",
+        "buttonText": "Contactez-nous"
+      }
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Gosselin Lessard Immobilier est une entreprise de confiance spécialisée dans la propriété et la gestion d'immeubles commerciaux, résidentiels et industriels dans la région de Thetford Mines. Fondée par Hugo Gosselin et Christine Lessard, notre équipe apporte une expertise locale inégalée et une approche personnalisée à chaque projet immobilier. Nous nous engageons à offrir un service de qualité supérieure et à bâtir des relations durables avec nos clients et partenaires. Que vous soyez à la recherche d'un espace commercial, d'une propriété résidentielle ou de terrains à développer, nous mettons notre connaissance approfondie du marché immobilier local et notre réseau étendu à votre service. Chez Gosselin Lessard Immobilier, nous ne vendons pas simplement des propriétés – nous créons des opportunités et accompagnons nos clients à chaque étape de leur parcours immobilier.",
+      "teamMembers": [
+        {
+          "name": "Hugo Gosselin",
+          "title": "Président",
+          "email": "hugo@gosselinlessard.com",
+          "facebook": "https://www.facebook.com/gosselinlessard"
+        },
+        {
+          "name": "Christine Lessard",
+          "title": "Vice présidente",
+          "email": "gosselinlessard@gmail.com",
+          "facebook": "https://www.facebook.com/gosselinlessard"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "companyName": "GOSSELIN LESSARD IMMOBILIER",
+      "address": {
+        "street": "851 Boul. Ouellet,",
+        "city": "Thetford Mines, QC",
+        "postalCode": "G6G 4X7"
+      },
+      "phones": [
+        {
+          "number": "(418) 814-0136",
+          "person": "Hugo GOSSELIN"
+        },
+        {
+          "number": "(418) 576-5882",
+          "person": "Christine LESSARD"
+        }
+      ],
+      "email": "Info@gosselinlessard.com",
+      "hours": "Heures d'ouverture :\n(Sur rendez-vous)",
+      "form": {
+        "title": "écrivez-nous",
+        "namePlaceholder": "Nom",
+        "emailPlaceholder": "Courriel",
+        "phonePlaceholder": "Téléphone",
+        "messagePlaceholder": "Message",
+        "submitButton": "Envoyer",
+        "loadingButton": "Envoi en cours...",
+        "successMessage": "Message envoyé avec succès!",
+        "errorMessages": {
+          "name": "Nom est requis",
+          "email": "Courriel est requis",
+          "phone": "Téléphone est requis",
+          "phoneFormat": "Téléphone doit être au format 418-003-0888",
+          "message": "Message est requis",
+          "general": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard."
+        }
+      }
+    },
+    "properties": {
+      "shared": {
+        "photos": "Photos",
+        "map": "Carte",
+        "details": "Détails",
+        "description": "descriptions",
+        "squareFeetLabel": "Pied de carré disponible",
+        "availabilityLabel": "Disponibilité",
+        "roomsLabel": "Nombre de pièces",
+        "propertyNotFound": "Propriété non trouvée. Redirection..."
+      },
+      "residential": {
+        "bedroomLabel": "Chambre",
+        "bedroomsLabel": "Chambres",
+        "bathroomLabel": "salle de Bain",
+        "bathroomsLabel": "salles de Bain"
+      },
+      "commercial": {
+        "spaceType": "Espace commercial"
+      },
+      "industrial": {
+        "spaceType": "Espace industriel"
+      },
+      "promenade": {
+        "blackLake": "Promenade Black Lake"
+      }
+    }
+  }

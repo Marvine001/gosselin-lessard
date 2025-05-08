@@ -1,282 +1,200 @@
-import React, { Component } from 'react'
-import './Residentiel.css'
+import React, { useState, useEffect, useRef } from 'react';
+import './Residentiel.css';
 import Header from '../../../header/Header';
 import Footer from '../../../footer/Footer';
-import { Col, Container, Row, Carousel, Collapse, Button } from 'react-bootstrap';
-import { IoBed } from "react-icons/io5"
-import { FaBath } from "react-icons/fa"
-import { IoIosAddCircleOutline } from "react-icons/io"
-import { IoIosRemoveCircleOutline } from "react-icons/io"
+import { Col, Container, Row, Carousel, Button, Spinner } from 'react-bootstrap';
+import { useParams, useNavigate } from 'react-router-dom';
+// Importer les données directement (sans lazy loading)
+import propertiesData from '../../../../data/residential.json';
 
-const images = [
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png',
-    '/images/properties/image-properties.png'
+const ForResidentiel = () => {
+    const { propertyId } = useParams();
+    const navigate = useNavigate();
+    const [activeTab, setActiveTab] = useState('photos');
+    const [index, setIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [property, setProperty] = useState(null);
+    const imageRefs = useRef([]);
+    
+    // Utiliser useEffect pour charger la propriété de manière sécurisée
+    useEffect(() => {
+        setLoading(true);
+        // Rechercher la propriété par ID
+        const foundProperty = propertiesData.properties.find(p => p.id === parseInt(propertyId));
+        
+        if (foundProperty) {
+            setProperty(foundProperty);
+        } else {
+            // Rediriger si la propriété n'existe pas
+            navigate('/residential');
+        }
+        setLoading(false);
+    }, [propertyId, navigate]);
+    
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+        scrollToView(selectedIndex);
+    };
 
-]
-class ForResidentiel extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeTab: 'photos',
-            index: 0,
-            sections: {
-                terrain: false,
-                batiment: false,
-                pieces: false,
-                caracteristiques: false,
-                inclusionsExclusions: false,
-            }
+    const handleImageClick = (idx) => {
+        setIndex(idx);
+        scrollToView(idx);
+    };
 
-        };
-        this.imageRefs = [];
-    }
-
-    setActiveTab = (tab) => {
-        this.setState({ activeTab: tab });
-    }
-
-    handleSelect = (selectedIndex) => {
-        this.setState({ index: selectedIndex }, () => {
-            this.scrollToView(selectedIndex);
-        });
-    }
-
-    handleImageClick = (idx) => {
-        this.setState({ index: idx }, () => {
-            this.scrollToView(idx);
-        });
-    }
-
-    scrollToView = (idx) => {
-        if (this.imageRefs[idx]) {
-            this.imageRefs[idx].scrollIntoView({
+    const scrollToView = (idx) => {
+        if (imageRefs.current[idx]) {
+            imageRefs.current[idx].scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest',
                 inline: 'center'
             });
         }
-    }
+    };
 
-    // toggleCollapse = () => {
-    //     this.setState({ open: !this.state.open });
-    // }
-
-    toggleSection = (section) => {
-        this.setState(prevState => ({
-            sections: {
-                ...prevState.sections,
-                [section]: !prevState.sections[section]
-            }
-        }));
-    }
-
-    render() {
-        const { activeTab, index, sections } = this.state;
+    // Afficher un indicateur de chargement pendant le chargement des données
+    if (loading) {
         return (
-            <div className='bg-black'>
-                <Header />
-
-                <div className='mt-5'>
-                    <Container fluid>
-                        <Row className='px-4'>
-                            <Col md={12}>
-                                <h3 className='text-center text-white uppercase fw-semibold'> Résidentiel - Thetford mines </h3>
-                            </Col>
-                        </Row>
-
-                        <Row className='mt-5'>
-                            <Col
-                                xs={6}
-                                md={6}
-                                lg={4}
-                                className={`p-3 border uppercase text-center fw-semibold ${activeTab === 'photos' ? 'bg-gray' : 'bg-white'}`}
-                                onClick={() => this.setActiveTab('photos')}
-                                style={{ cursor: 'pointer' }}
-                            >
-                                Photos
-                            </Col>
-                            <Col
-                                xs={6}
-                                md={6}
-                                lg={4}
-                                className={`p-3 border uppercase text-center fw-semibold ${activeTab === 'carte' ? 'bg-gray' : 'bg-white'}`}
-                                onClick={() => this.setActiveTab('carte')}
-                                style={{ cursor: 'pointer' }}
-
-                            >
-                                Carte
-                            </Col>
-                            <Col
-                                xs={{ span: 12, order: 1 }}
-                                md={{ span: 12, order: 1 }}
-                                lg={{ span: 4, order: 0 }}
-                                className='bg-blue text-white p-3 border uppercase text-center fw-semibold'>
-                                Détails
-                            </Col>
-                            <Col
-                                xs={{ span: 12, order: 0 }}
-                                md={{ span: 12, order: 0 }}
-                                lg={{ span: 8, order: 1 }}
-                                className='p-0'>
-                                {/* <img
-                                    src={`${process.env.PUBLIC_URL}/images/properties/image-properties.png`}
-                                    alt='ILLUSTRaTION '
-                                    className='full-width-image'
-                                /> */}
-                                {activeTab === 'photos' && (
-                                    <Carousel activeIndex={index} onSelect={this.handleSelect}>
-                                        {images.map((image, idx) => (
-                                            <Carousel.Item key={idx}>
-                                                <img className="d-block w-100" src={image} alt={`Slide ${idx}`} />
-                                            </Carousel.Item>
-                                        ))}
-                                    </Carousel>
-                                )}
-
-                                {activeTab === 'carte' && (
-                                    <div>
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.5052065576783!2d-122.33583748436696!3d47.60801307918556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102bff4af849%3A0x4cbcc01627d2d8bb!2sPike%20Place%20Market!5e0!3m2!1sen!2sus!4v1596174901810!5m2!1sen!2sus"
-                                            width="100%"
-                                            height="450"
-                                            frameBorder="0"
-                                            style={{ border: 0 }}
-                                            allowFullScreen=""
-                                            aria-hidden="false"
-                                            tabIndex="0"
-                                            title="Google Map"
-                                        ></iframe>
-                                    </div>
-                                )}
-                            </Col>
-                            <Col
-                                xs={{ span: 12, order: 2 }}
-                                md={{ span: 12, order: 2 }}
-                                lg={{ span: 4, order: 2 }}
-                                className='text-white p-3'>
-                                <h3 className='uppercase'>1378 rue champignon Thetford mines, QC G6G XXX</h3>
-                                <hr className='white'></hr>
-                                <p className='justify'>
-                                    À louer superbe local au 1er étage dans une nouvelle bâtisse de prestige, très bien situé,
-                                    voisin du McDonald, idéal pour bureau de professionnel ou autre. 1 local disponibles 2170p.c.
-                                    Locataire avec bonne référence seulement. Grand espace de parking.
-                                    <br />
-                                    <br />
-                                    <span className='fw-semibold fs-5'>Nombre de pièce: 0</span>
-                                    <br />
-                                    <span className='fw-semibold fs-5'>Pied de carré disponible</span>
-                                    <br />
-                                    <span className='fw-semibold fs-5'>Disponibilité</span>
-                                </p>
-
-                            </Col>
-                        </Row>
-                        {activeTab === 'photos' && (
-                            <Row className='bg-gray d-none d-lg-block'>
-                                <Col xs={12} md={12} lg={12} className='bg-gray p-0'>
-                                    <div className="second-carousel">
-                                        {images.map((image, idx) => (
-                                            <div
-                                                key={idx}
-                                                ref={(ref) => this.imageRefs[idx] = ref}
-                                                className={`image-containers ${index === idx ? 'active' : 'inactive'}`}
-                                                onClick={() => this.handleImageClick(idx)}
-                                            >
-                                                <img className="d-block w-100" src={image} alt={`Slide ${idx}`} />
-                                            </div>
-                                        ))}
-                                    </div>
-                                </Col>
-                            </Row>
-                        )}
-
-                        <Row className='bg-blue text-white text-center uppercase py-4'>
-                            <Col
-                                xs={6}
-                                md={6}
-                                lg={6}
-                            >
-                                <IoBed className='icon-1 pb-1' />
-                                <br />
-                                3 Chambres
-                            </Col>
-                            <Col
-                                xs={6}
-                                md={6}
-                                lg={6}
-                            >
-                                <FaBath className='icon-1 pb-1' />
-                                <br />
-                                1 salle de Bain
-                            </Col>
-                        </Row>
-
-                        <div>
-                            {/* Your other component code */}
-                            <Row className='p-5 text-white '>
-                                <Col xs={9} md={9} lg={9} className='uppercase ps-5'> 
-                                    <h3>Descriptions</h3>
-                                </Col>
-                                <Col xs={3} md={3} lg={3} className=''>
-                                    <div className='icon-container'>
-                                        {sections.terrain ? (
-                                            <IoIosRemoveCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('terrain')}
-                                                aria-controls="terrain-collapse-text"
-                                                aria-expanded={sections.terrain}
-                                            />
-                                        ) : (
-                                            <IoIosAddCircleOutline
-                                                className='icon-2'
-                                                onClick={() => this.toggleSection('terrain')}
-                                                aria-controls="terrain-collapse-text"
-                                                aria-expanded={sections.terrain}
-                                            />
-                                        )}
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={12} lg={12} className='px-4'>
-                                    <Collapse in={sections.terrain}>
-                                        <div id="terrain-collapse-text">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </Collapse>
-                                </Col>
-                            </Row>
-                        </div>
-
-                        <Row className='bg-gray p-5'>
-                            <Col md={12} className='mx-auto p-2 text-center'>
-                                <h3 className='uppercase fw-bold'> Besoin de plus d'informations ?</h3>
-                            </Col>
-                            <Col md={12} className='mx-auto text-center p-2'>
-                                <Button href='/join_us' variant="primary" className='uppercase'>Contactez-nous</Button>
-                            </Col>
-                        </Row>
-                    </Container>
-
-
-                </div>
-
-                <Footer />
+            <div className="bg-black d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+                <Spinner animation="border" variant="light" />
             </div>
         );
     }
-}
+
+    // Si la propriété n'est pas trouvée et que la redirection n'a pas encore eu lieu
+    if (!property) {
+        return (
+            <div className="bg-black text-white d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+                <p>Propriété non trouvée. Redirection...</p>
+            </div>
+        );
+    }
+
+    return (
+        <div className='bg-black'>
+            <Header />
+
+            <div className='mt-5'>
+                <Container fluid>
+                    <Row className='px-4'>
+                        <Col md={12}>
+                            <h3 className='text-center text-white uppercase fw-semibold'>
+                                {property.title} - {property.location.split('\n')[0]}
+                            </h3>
+                        </Col>
+                    </Row>
+
+                    <Row className='mt-5'>
+                        <Col
+                            xs={6}
+                            md={6}
+                            lg={4}
+                            className={`p-3 border uppercase text-center fw-semibold ${activeTab === 'photos' ? 'bg-gray' : 'bg-white'}`}
+                            onClick={() => setActiveTab('photos')}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            Photos
+                        </Col>
+                        <Col
+                            xs={6}
+                            md={6}
+                            lg={4}
+                            className={`p-3 border uppercase text-center fw-semibold ${activeTab === 'carte' ? 'bg-gray' : 'bg-white'}`}
+                            onClick={() => setActiveTab('carte')}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            Carte
+                        </Col>
+                        <Col
+                            xs={{ span: 12, order: 1 }}
+                            md={{ span: 12, order: 1 }}
+                            lg={{ span: 4, order: 0 }}
+                            className='bg-blue text-white p-3 border uppercase text-center fw-semibold'>
+                            Détails
+                        </Col>
+                        <Col
+                            xs={{ span: 12, order: 0 }}
+                            md={{ span: 12, order: 0 }}
+                            lg={{ span: 8, order: 1 }}
+                            className='p-0'>
+                            {activeTab === 'photos' && (
+                                <Carousel activeIndex={index} onSelect={handleSelect}>
+                                    {property.images.map((image, idx) => (
+                                        <Carousel.Item key={idx}>
+                                            <img className="d-block w-100" src={image} alt={`Slide ${idx}`} />
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            )}
+
+                            {activeTab === 'carte' && (
+                                <div>
+                                    <iframe
+                                        src={property.mapLocation.embedUrl}
+                                        width="100%"
+                                        height="450"
+                                        frameBorder="0"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        aria-hidden="false"
+                                        tabIndex="0"
+                                        title="Google Map"
+                                    ></iframe>
+                                </div>
+                            )}
+                        </Col>
+                        <Col
+                            xs={{ span: 12, order: 2 }}
+                            md={{ span: 12, order: 2 }}
+                            lg={{ span: 4, order: 2 }}
+                            className='text-white p-3'>
+                            <h3 className='uppercase'>{property.address}</h3>
+                            <hr className='white'></hr>
+                            <p className='justify'>
+                                {property.description}
+                                <br />
+                            </p>
+                        </Col>
+                    </Row>
+                    
+                    {activeTab === 'photos' && (
+                        <Row className='bg-gray d-none d-lg-block'>
+                            <Col xs={12} md={12} lg={12} className='bg-gray p-0'>
+                                <div className="second-carousel">
+                                    {property.images.map((image, idx) => (
+                                        <div
+                                            key={idx}
+                                            ref={(ref) => imageRefs.current[idx] = ref}
+                                            className={`image-containers ${index === idx ? 'active' : 'inactive'}`}
+                                            onClick={() => handleImageClick(idx)}
+                                        >
+                                            <img className="d-block w-100" src={image} alt={`Slide ${idx}`} />
+                                        </div>
+                                    ))}
+                                </div>
+                            </Col>
+                        </Row>
+                    )}
+
+                    <Row className='bg-blue text-white text-center uppercase py-4'>
+                        <Col xs={12} md={12} lg={12}>
+                            <span className='fs-5'>Espace résidentiel</span>
+                        </Col>
+                    </Row>
+
+                    <Row className='bg-gray p-5'>
+                        <Col md={12} className='mx-auto p-2 text-center'>
+                            <h3 className='uppercase fw-bold'>Besoin de plus d'informations ?</h3>
+                        </Col>
+                        <Col md={12} className='mx-auto text-center p-2'>
+                            <Button href='/join_us' variant="primary" className='uppercase'>Contactez-nous</Button>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <Footer />
+        </div>
+    );
+};
+
 export default ForResidentiel;

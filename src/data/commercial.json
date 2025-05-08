@@ -1,0 +1,314 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 4X7",
+        "province": "QC",
+        "adresse": "851 Boulevard Ouellet"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 17086,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.104789,
+        "lng": -71.296532,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1567890123456!2d-71.296532!3d46.104789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s851%20Boulevard%20Ouellet%2C%20Thetford%20Mines%2C%20QC%20G6G%204X7!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 6K2",
+        "province": "QC",
+        "adresse": "337 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 5950,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.093765,
+        "lng": -71.317892,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1567890123456!2d-71.317892!3d46.093765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s337%20Boulevard%20Frontenac%20Ouest%2C%20Thetford%20Mines%2C%20QC%20G6G%206K2!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 2V2",
+        "province": "QC",
+        "adresse": "1197 Rue Notre-Dame Est"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 12500,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.089521,
+        "lng": -71.293478,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1567890123456!2d-71.293478!3d46.089521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s1197%20Rue%20Notre-Dame%20Est%2C%20Thetford%20Mines%2C%20QC%20G6G%202V2!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 1T3",
+        "province": "QC",
+        "adresse": "431-435-437 Rue Simoneau"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 12000,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.088245,
+        "lng": -71.304591,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.3067797!3d46.0882453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s435%20Rue%20Simoneau%2C%20Thetford%20Mines%2C%20QC%20G6G%201T3!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 6S5",
+        "province": "QC",
+        "adresse": "47 Rue Gagné"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 20300,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.084123,
+        "lng": -71.316789,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.3123456789012!2d-71.316789!3d46.084123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s47%20Rue%20Gagné%2C%20Thetford%20Mines%2C%20QC%20G6G%206S5!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 3W4",
+        "province": "QC",
+        "adresse": "35-39 Rue St-Alphonse Nord"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 10000,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.091835,
+        "lng": -71.308947,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1567890123456!2d-71.308947!3d46.091835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s35%20Rue%20St-Alphonse%20Nord%2C%20Thetford%20Mines%2C%20QC%20G6G%203W4!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6H 2C1",
+        "province": "QC",
+        "adresse": "3774 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 0,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.097845,
+        "lng": -71.365421,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.3654212!3d46.097845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcaa5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s3774%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6H%202C1!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6H 2C1",
+        "province": "QC",
+        "adresse": "3830 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 0,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.097845,
+        "lng": -71.365782,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.365782!3d46.097845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcaa5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s3830%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6H%202C1!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 1S9",
+        "province": "QC",
+        "adresse": "58 Rue Simoneau"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 1200,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.087762,
+        "lng": -71.306473,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1243567890123!2d-71.306473!3d46.087762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s58%20Rue%20Simoneau%2C%20Thetford%20Mines%2C%20QC%20G6G%201S9!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Commercial",
+      "location": "Thetford Mines",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 2R6",
+        "province": "QC",
+        "adresse": "81 Rue Pie XI"
+      },
+      "price": "",
+      "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
+      "squareFeet": 2000,
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.089457,
+        "lng": -71.309863,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.1567890123456!2d-71.309863!3d46.089457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s81%20Rue%20Pie%20XI%2C%20Thetford%20Mines%2C%20QC%20G6G%202R6!5e0!3m2!1sfr!2sca!4v1714676072186!5m2!1sfr!2sca"
+      }
+    }
+  ]
+}

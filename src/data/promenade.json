@@ -1,0 +1,159 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Jardins des Plantes",
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford Mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7G7",
+        "province": "QC",
+        "adresse": "3820 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Centre commercial avec plusieurs espaces commerciaux disponibles à la location. Excellent emplacement avec fort achalandage.",
+      "availability": "Non",
+      "dateAvailability": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.09783,
+        "lng": -71.36585,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.36585!3d46.09783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcbd5f9b7c2b%3A0x8f8f8f8f8f8f8f8f!2s3820%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207G7!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Place Ariane",
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford Mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7G7",
+        "province": "QC",
+        "adresse": "3840 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Centre commercial avec plusieurs espaces commerciaux disponibles à la location. Excellent emplacement avec fort achalandage.",
+      "availability": "Non",
+      "dateAvailability": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.09763,
+        "lng": -71.36623,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.36623!3d46.09763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcbd8a7c2b9f%3A0x9f9f9f9f9f9f9f9f!2s3840%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207G7!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 3,
+      "name": "",
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford Mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7G6",
+        "province": "QC",
+        "adresse": "3774 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Centre commercial avec plusieurs espaces commerciaux disponibles à la location. Excellent emplacement avec fort achalandage.",
+      "availability": "Immédiatement",
+      "dateAvailability": "",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.09813,
+        "lng": -71.36501,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.36501!3d46.09813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcbc5a7c2b9f%3A0x6f6f6f6f6f6f6f6f!2s3774%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207G6!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Commercial",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "location": "Thetford Mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7G6",
+        "province": "QC",
+        "adresse": "3774 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Centre commercial avec plusieurs espaces commerciaux disponibles à la location. Excellent emplacement avec fort achalandage.",
+      "availability": "Yes",
+      "dateAvailability": "",
+      "squareFeet": 17086,
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.09813,
+        "lng": -71.36501,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.36501!3d46.09813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcbc5a7c2b9f%3A0x6f6f6f6f6f6f6f6f!2s3774%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207G6!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Commercial",
+      "category": "commercial",
+      "categoryLabel": "Commercial",
+      "location": "Thetford Mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7G7",
+        "province": "QC",
+        "adresse": "3830 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "Centre commercial avec plusieurs espaces commerciaux disponibles à la location. Excellent emplacement avec fort achalandage.",
+      "availability": "Yes",
+      "dateAvailability": "",
+      "squareFeet": 17086,
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.09773,
+        "lng": -71.36604,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.36604!3d46.09773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcbd6a7c2b9f%3A0x7f7f7f7f7f7f7f7f!2s3830%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207G7!5e0!3m2!1sfr!2sca!4v1714675789541!5m2!1sfr!2sca"
+      }
+    }
+  ]
+}

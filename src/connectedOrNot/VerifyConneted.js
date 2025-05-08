@@ -1,45 +1,38 @@
-import React, { Component } from 'react';
-import { Navigate } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-class VerifyConnected extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOnline: navigator.onLine,
-      location: null,
-    };
-  }
+function VerifyConnected() {
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [location, setLocation] = useState(null);
+  const navigate = useNavigate();
 
-  componentDidMount() {
-    window.addEventListener('online', this.handleOnlineStatus);
-    window.addEventListener('offline', this.handleOnlineStatus);
-
-    if (this.state.isOnline) {
-      this.getLocation();
-    }
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('online', this.handleOnlineStatus);
-    window.removeEventListener('offline', this.handleOnlineStatus);
-  }
-
-  handleOnlineStatus = () => {
-    this.setState({ isOnline: navigator.onLine }, () => {
-      if (this.state.isOnline) {
-        this.getLocation();
+  useEffect(() => {
+    const handleOnlineStatus = () => {
+      setIsOnline(navigator.onLine);
+      if (navigator.onLine) {
+        getLocation();
       }
-    });
-  };
+    };
 
-  getLocation = () => {
+    window.addEventListener('online', handleOnlineStatus);
+    window.addEventListener('offline', handleOnlineStatus);
+
+    if (isOnline) {
+      getLocation();
+    }
+
+    return () => {
+      window.removeEventListener('online', handleOnlineStatus);
+      window.removeEventListener('offline', handleOnlineStatus);
+    };
+  }, []);
+
+  const getLocation = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        this.setState({
-          location: {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-          },
+        setLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
         });
       },
       (error) => {
@@ -48,18 +41,15 @@ class VerifyConnected extends Component {
     );
   };
 
-  render() {
-    if (!this.state.isOnline) {
-      return <Navigate to="/404" />;
+  useEffect(() => {
+    if (isOnline === false) {
+      navigate('/404');
+    } else if (isOnline === true) {
+      navigate('/home');
     }
+  }, [isOnline, navigate]);
 
-    return (
-      <>
-      </>
-    );
-  }
+  return null;
 }
+
 export default VerifyConnected;
-
-
-

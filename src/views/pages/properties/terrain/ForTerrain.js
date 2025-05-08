@@ -134,11 +134,7 @@ class ForTerrain extends Component {
                                 md={{ span: 12, order: 0 }}
                                 lg={{ span: 8, order: 1 }}
                                 className='p-0'>
-                                {/* <img
-                                    src={`${process.env.PUBLIC_URL}/images/properties/image-properties.png`}
-                                    alt='ILLUSTRaTION '
-                                    className='full-width-image'
-                                /> */}
+
                                 {activeTab === 'photos' && (
                                     <Carousel activeIndex={index} onSelect={this.handleSelect}>
                                         {images.map((image, idx) => (

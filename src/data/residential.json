@@ -1,0 +1,316 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 1T3",
+        "province": "QC",
+        "adresse": "429-433 Rue Simoneau"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.088245,
+        "lng": -71.304591,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.3067797!3d46.0882453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s433%20Rue%20Simoneau%2C%20Thetford%20Mines%2C%20QC%20G6G%201T3!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 3W4",
+        "province": "QC",
+        "adresse": "33-37 Rue St-Alphonse Nord"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.091835,
+        "lng": -71.308947,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.308947!3d46.091835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s35%20Rue%20St-Alphonse%20Nord%2C%20Thetford%20Mines%2C%20QC%20G6G%203W4!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6H 2C1",
+        "province": "QC",
+        "adresse": "3774 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Non",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.097845,
+        "lng": -71.365421,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.3654212!3d46.097845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcaa5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s3774%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6H%202C1!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Résidentiel",
+      "name": "Jardins des Plantes",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6H 2C1",
+        "province": "QC",
+        "adresse": "3820 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Non",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.097845,
+        "lng": -71.366012,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.366012!3d46.097845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcaa5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s3820%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6H%202C1!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Résidentiel",
+      "name":"Place Ariane",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6H 2C1",
+        "province": "QC",
+        "adresse": "3840 Boulevard Frontenac Ouest"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Non",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.097845,
+        "lng": -71.366421,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.7607549771193!2d-71.366421!3d46.097845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcaa5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s3840%20Boulevard%20Frontenac%20O%2C%20Thetford%20Mines%2C%20QC%20G6H%202C1!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 3V1",
+        "province": "QC",
+        "adresse": "798 Rue Ste-Marthe"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.089543,
+        "lng": -71.307823,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.307823!3d46.089543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s798%20Rue%20Ste-Marthe%2C%20Thetford%20Mines%2C%20QC%20G6G%203V1!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 3V1",
+        "province": "QC",
+        "adresse": "816 Rue Ste-Marthe"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.089764,
+        "lng": -71.308123,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.308123!3d46.089764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s816%20Rue%20Ste-Marthe%2C%20Thetford%20Mines%2C%20QC%20G6G%203V1!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 4R3",
+        "province": "QC",
+        "adresse": "494-496-502-506 Rue Martineau"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.087985,
+        "lng": -71.305872,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.305872!3d46.087985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s500%20Rue%20Martineau%2C%20Thetford%20Mines%2C%20QC%20G6G%204R3!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 5C4",
+        "province": "QC",
+        "adresse": "149 Rue Dubé"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.086457,
+        "lng": -71.312653,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.312653!3d46.086457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s149%20Rue%20Dubé%2C%20Thetford%20Mines%2C%20QC%20G6G%205C4!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Résidentiel",
+      "category": "residentiel",
+      "categoryLabel": "Résidentiel",
+      "location": "Thetford-mines",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 1N9",
+        "province": "QC",
+        "adresse": "125 Rue Bédard Ouest"
+      },
+      "price": "",
+      "description": "À louer superbe appartement, très bien situé dans un quartier tranquille. Idéal pour petite famille ou couple. Stationnement inclus et accès à une cour arrière.",
+      "availability": "Oui",
+      "dateAvailabilty": "",
+      "typeApartment": "", 
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.091348,
+        "lng": -71.313452,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.0863654868485!2d-71.313452!3d46.091348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dcb8e6b33b8d%3A0x5040cadae4d54b0!2s125%20Rue%20Bédard%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%201N9!5e0!3m2!1sfr!2sca!4v1714675489754!5m2!1sfr!2sca"
+      }
+    }
+  ]
+}

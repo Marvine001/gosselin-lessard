@@ -1,0 +1,66 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Industriel",
+      "category": "industriel",
+      "categoryLabel": "Industriel",
+      "location": "Thetford Mines\n47 Gagné",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 6S5",
+        "province": "QC",
+        "adresse": "47 rue Gagné"
+      },
+      "price": "",
+      "description": "Bâtiment industriel spacieux idéal pour manufacture légère, entreposage ou atelier. Excellente localisation dans la zone industrielle de Thetford Mines.",
+      "squareFeet": 4500,
+      "availability": "Oui",
+      "dateAvailability":"",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.084123,
+        "lng": -71.316789,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.3123456789012!2d-71.316789!3d46.084123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s47%20Rue%20Gagné%2C%20Thetford%20Mines%2C%20QC%20G6G%206S5!5e0!3m2!1sfr!2sca!4v1714676123456!5m2!1sfr!2sca"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Industriel",
+      "category": "industriel",
+      "categoryLabel": "Industriel",
+      "location": "Thetford Mines\n759 Caouette Ouest",
+      "imageUrl": "/images/properties/image-properties.png",
+      "address": {
+        "ville": "Thetford Mines",
+        "codePostale": "G6G 7M9",
+        "province": "QC",
+        "adresse": "759 rue Caouette Ouest"
+      },
+      "price": "",
+      "description": "Grand complexe industriel modulable selon vos besoins. Parfait pour entreprise manufacturière, logistique ou entreposage à grande échelle.",
+      "squareFeet": 8750,
+      "availability": "Oui",
+      "dateAvailability":"1er septembre 2025",
+      "images": [
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png",
+        "/images/properties/image-properties.png"
+      ],
+      "mapLocation": {
+        "lat": 46.079456,
+        "lng": -71.325678,
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.6543210987654!2d-71.325678!3d46.079456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9dc5d5d5d5d5d%3A0x5d5d5d5d5d5d5d5d!2s759%20Rue%20Caouette%20O%2C%20Thetford%20Mines%2C%20QC%20G6G%207M9!5e0!3m2!1sfr!2sca!4v1714676123456!5m2!1sfr!2sca"
+      }
+    }
+  ]
+}

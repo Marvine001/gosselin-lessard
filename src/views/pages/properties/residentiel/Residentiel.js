@@ -1,62 +1,73 @@
-import React, { Component } from 'react'
-import './Residentiel.css'
-import Header from '../../../header/Header'
-import Footer from '../../../footer/Footer'
-import { Row, Col, Container, Card } from 'react-bootstrap'
+import React from 'react';
+import './Residentiel.css';
+import Header from '../../../header/Header';
+import Footer from '../../../footer/Footer';
+import { Row, Col, Container, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import propertiesData from '../../../../data/residential.json';
 
+const Residentiel = () => {
+  const navigate = useNavigate();
+  const { properties } = propertiesData;
 
-class Residentiel extends Component {
+  const handlePropertyClick = (propertyId) => {
+    // Utilisez une route dynamique avec l'ID de la propriété
+    navigate(`/ForResidential/${propertyId}`);
+  };
 
-    render() {
-        return (
-            <div>
-                <Header />
-
-                <div className='bg-black'>
-                    <Row>
-                        <Col md={12} className="image-container-residential image-query">
-                            <div className="image-title-residential">
-                                <h2 className="text-white uppercase fw-bold fs-1 nowrap">Nos immeubles résidentiels</h2>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Container className=''>
-                        <Row xs={1} md={3} className="g-3 py-5">
-                            {Array.from({ length: 9 }).map((_, idx) => (
-                                <Col key={idx} className='p-4'>
-                                    <Card className='uppercase'>
-                                        <Card.Link href="/ForResidential" className='custom-card-link'>
-                                            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/properties/image-properties.png`} />
-                                            <Card.Body className='bg-blue'>
-                                                <Card.Title className='text-white text-center'>Maison Terre-neuve</Card.Title>
-                                            </Card.Body>
-                                            <Card.Body className='bg-gray'>
-                                                <Card.Text>
-                                                    Thetford-mines <br></br> 78 Rue Boily
-                                                </Card.Text>
-                                                <Card.Text>
-                                                    <Row>
-                                                        <Col xs={8} md={8} className='fw-bold'></Col>
-                                                        <Col xs={4} md={4}>
-                                                            <div className="icons">
-                                                                <span role="img" aria-label="beds">🛏️ 3</span>
-                                                                <span role="img" aria-label="baths">🛁 1</span>
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card.Link>
-                                    </Card>
-                                </Col>
-                            ))}
-                        </Row>
-                    </Container>
-                </div>
-
-                <Footer />
+  return (
+    <div className="d-flex flex-column min-vh-100">
+      <Header />
+      <main className="bg-black flex-grow-1">
+        {/* Bannière */}
+        <Row className="m-0">
+          <Col className="image-container-residential image-query p-0">
+            <div className="image-title-residential">
+              <h1 className="text-white text-uppercase fw-bold fs-1">Nos immeubles résidentiels</h1>
             </div>
-        );
-    }
-}
+          </Col>
+        </Row>
+        
+        {/* Liste des propriétés */}
+        <Container>
+          <Row xs={1} md={2} lg={3} className="g-3 py-5">
+            {properties.map((property) => (
+              <Col key={property.id} className="p-2 p-md-3">
+                <Card className="text-uppercase h-100 property-card">
+                  <div 
+                    className="custom-card-link" 
+                    onClick={() => handlePropertyClick(property.id)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <Card.Img
+                      variant="top"
+                      src={property.imageUrl}
+                      alt={`Propriété ${property.title}`}
+                      className="img-fluid"
+                    />
+                    <Card.Body className="bg-gray">
+                      <Card.Text className="mb-1">
+                        <span className="badge bg-primary me-2">{property.title}</span>
+                      </Card.Text>
+                      <Card.Text className="mb-2">
+                        {property.location.split('\n').map((line, i) => (
+                          <React.Fragment key={i}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </div>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
 export default Residentiel;

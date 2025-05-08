@@ -10,7 +10,7 @@ class Footer extends Component {
                 <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/footer/gosselinlessard_footer.png`} className="custom-img-height-footer" />
                 <Card.Body className="bg-blue text-white">
                     <Card.Text className="custom_text-family fs-5">
-                        © Tous droits réservés - Gosselin Lessard Inc. 2024
+                        © Tous droits réservés - Gosselin Lessard Inc. 2025
                     </Card.Text>
                 </Card.Body>
             </Card>

@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './Industriel.css';
-import Header from '../../../header/Header';
-import Footer from '../../../footer/Footer';
+import React, { useState, useEffect, useRef }  from 'react'
+import './Promenade.css'
+import HeaderBl from '../../header/Header_bl';
+import Footer from '../../footer/Footer';
 import { Col, Container, Row, Carousel, Button, Spinner } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
-// Importer les données directement
-import industrialData from '../../../../data/industrial.json';
 
-const ForIndustrial= () => {
-    const { propertyId } = useParams();
+import promenadeData from '../../../data/promenade.json';
+
+const PromenadePropertyDetails = () => {
+    const { type, propertyId } = useParams();
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('photos');
     const [index, setIndex] = useState(0);
@@ -16,20 +16,26 @@ const ForIndustrial= () => {
     const [property, setProperty] = useState(null);
     const imageRefs = useRef([]);
     
-    // Utiliser useEffect pour charger la propriété de manière sécurisée
     useEffect(() => {
         setLoading(true);
         // Rechercher la propriété par ID
-        const foundProperty = industrialData.properties.find(p => p.id === parseInt(propertyId));
+        const foundProperty = promenadeData.properties.find(p => p.id === parseInt(propertyId));
         
         if (foundProperty) {
-            setProperty(foundProperty);
+            // Vérifier que la propriété correspond au type
+            if (type === 'commercial' && foundProperty.category !== 'commercial') {
+                navigate('/promenade/commercial');
+            } else if (type === 'residential' && foundProperty.category !== 'residentiel') {
+                navigate('/promenade/residential');
+            } else {
+                setProperty(foundProperty);
+            }
         } else {
-            // Rediriger si la propriété n'existe pas
-            navigate('/industrial');
+            // Rediriger en utilisant le type de l'URL
+            navigate(type === 'commercial' ? '/promenade/commercial' : '/promenade/residential');
         }
         setLoading(false);
-    }, [propertyId, navigate]);
+    }, [propertyId, type, navigate]);
     
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
@@ -51,7 +57,6 @@ const ForIndustrial= () => {
         }
     };
 
-    // Afficher un indicateur de chargement pendant le chargement des données
     if (loading) {
         return (
             <div className="bg-black d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
@@ -60,7 +65,6 @@ const ForIndustrial= () => {
         );
     }
 
-    // Si la propriété n'est pas trouvée et que la redirection n'a pas encore eu lieu
     if (!property) {
         return (
             <div className="bg-black text-white d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
@@ -69,16 +73,19 @@ const ForIndustrial= () => {
         );
     }
 
+    // Construire l'adresse complète en format uppercase
+    const fullAddress = `${property.address.adresse}, ${property.address.ville}, ${property.address.province} ${property.address.codePostale}`.toUpperCase();
+
     return (
         <div className='bg-black'>
-            <Header />
+            <HeaderBl />
 
             <div className='mt-5'>
                 <Container fluid>
                     <Row className='px-4'>
                         <Col md={12}>
                             <h3 className='text-center text-white uppercase fw-semibold'>
-                                {property.title} - {property.location.split('\n')[0]}
+                                {property.name || property.title} - {property.address.ville}
                             </h3>
                         </Col>
                     </Row>
@@ -147,12 +154,13 @@ const ForIndustrial= () => {
                             md={{ span: 12, order: 2 }}
                             lg={{ span: 4, order: 2 }}
                             className='text-white p-3'>
-                            <h3 className='uppercase'>{property.address}</h3>
+                            <h3 className='uppercase'>{fullAddress}</h3>
                             <hr className='white'></hr>
                             <p className='justify'>
                                 {property.description}
                                 <br />
                             </p>
+                            
                         </Col>
                     </Row>
                     
@@ -177,7 +185,9 @@ const ForIndustrial= () => {
 
                     <Row className='bg-blue text-white text-center uppercase py-4'>
                         <Col xs={12} md={12} lg={12}>
-                            <span className='fs-5'>Espace industriel</span>
+                            <span className='fs-5'>
+                                Espace {type === 'commercial' ? 'Commercial' : 'Résidentiel'}
+                            </span>
                         </Col>
                     </Row>
 
@@ -197,4 +207,4 @@ const ForIndustrial= () => {
     );
 };
 
-export default ForIndustrial;
+export default PromenadePropertyDetails;

@@ -1,36 +1,46 @@
 /* Pour l'image en background */
 .image-container-join {
-    position: relative;
-    background-image: url('../../../../public/images/join_us/contact_us.png');
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    height: 30rem;
-  }
-  
-  .image-title-join {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center;
-  }
+  position: relative;
+  background-image: url('../../../../public/images/join_us/contact_us.png');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 45rem;
+}
 
+.image-title-join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+/* Pour les bordures épaisse en bleu */
+.border-title {
+  position: relative;
+  padding-left: 20px;
+}
 
-  /* Pour les bordures épaisse en bleu */
-  .border-title {
-    position: relative;
-    padding-left: 20px; /* Adjust based on your needs */
+.border-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #0d6efd; /* Utilisation de la variable Bootstrap pour la cohérence */
+}
+
+/* Style pour le formulaire */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Optimisation des styles pour mobile */
+@media (max-width: 768px) {
+  .image-container-join {
+    height: 20rem;
   }
-  
-  .border-title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px; /* Adjust the thickness of the border */
-    height: 100%;
-    background-color: blue; /* The color of the border */
-  }
+}

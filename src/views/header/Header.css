@@ -1,91 +1,87 @@
-
-
-/* Pour la ligne blanche en dessous de chaque link */
-.nav-link {
-  color: #ffffff !important;
-}
-
-.nav-link-custom {
-  position: relative;
-  transition: color 0.3s;
-  font-size: large !important;
-  font-family: "Open Sans", sans-serif;
-  /* margin-right: 25px !important; */
-}
-
-.nav-link-custom::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 5px;
-  background-color: white;
-  bottom: -7.5px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s;
-}
-.nav-link-custom:hover::after {
-  width: 100%;
-}
-
-.nav-link-custom.active::after {
-  width: 100%;
-}
-
-@media (max-width: 576px) {
-  .nav-link-custom:hover::after {
-    width: 0%;
+/* Navigation Link Styles  - for header.js*/
+  .nav-link {
+    color: #ffffff !important;
   }
   
+  .nav-link-custom {
+    position: relative;
+    transition: color 0.3s;
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Underline animation for nav links */
+  .nav-link-custom::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    bottom: -7.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+  }
+  
+  .nav-link-custom:hover::after,
   .nav-link-custom.active::after {
-    width: 0%;
+    width: 100%;
   }
 
-}
-
-/* Pour le bouton de traduction */
-.btn-circle {
-  border-radius: 50% !important; /* Rend le bouton circulaire */
-  background-color: black; /* Fond noir */
-  color: white !important; /* Texte blanc */
-  width: 40px; /* Taille du bouton */
-  height: 40px; /* Taille du bouton */
-  border: none !important; /* Pas de bordure */
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif; /* Police Open Sans */
-}
-
-.btn-circle:hover {
-  opacity: 0.8; /* Légère réduction de l'opacité au survol */
-}
-
-
-/* Pour la liste déroulante */
-.dropdown-item-custom {
-  background-color: white; /* Fond blanc */
-  color: black; /* Texte noir */
-  transition:
-    background-color 0.3s,
-    color 0.3s;
-  font-family: "Open Sans", sans-serif; /* Police Open Sans */
-}
-
-.nav-link-custom .dropdown-item-custom:hover {
-  background-color: blue; /* Fond bleu au survol */
-  color: white; /* Texte blanc au survol */
-}
-
-/* For promenade page */
+  /* Responsive Styles*/
+    @media (max-width: 1199px) {
+      .nav-link-custom:hover::after,
+      .nav-link-custom.active::after{
+        width: 0%;
+      }
+      
+    }
+  
+/* Circle Language Toggle Button */
+  .btn-circle {
+    border-radius: 50% !important;
+    background-color: black;
+    color: white !important;
+    width: 40px;
+    height: 40px;
+    border: none !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .btn-circle:hover {
+    opacity: 0.8;
+  }
+  
+/* Dropdown Menu Styles */
+  .dropdown-item-custom {
+    background-color: white;
+    color: black;
+    transition:
+     background-color 0.3s,
+     color 0.3s;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .nav-link-custom .dropdown-item-custom:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+/* Styles spécifiques pour la promenade - */
 .nav-link-custom-promenade {
   position: relative;
   transition: color 0.3s;
-  font-size: large !important;
   font-family: "Open Sans", sans-serif;
-  margin-right: 25px !important;
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 15px;
+  padding: 10px 5px;
 }
 
 .nav-link-custom-promenade::after {
@@ -94,48 +90,47 @@
   width: 0;
   height: 5px;
   background-color: white;
-  bottom: -15px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
-  transition: width 0.3s;
-}
-.nav-link-custom-promenade:hover::after {
-  width: 100%;
+  transition: width 0.3s ease;
 }
 
+.nav-link-custom-promenade:hover::after,
 .nav-link-custom-promenade.active::after {
   width: 100%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .nav-link-custom-promenade.active::after,
   .nav-link-custom-promenade:hover::after {
     width: 0%;
   }
+}
   
-  .nav-link-custom-promenade.active::after {
-    width: 100%;
+/* For Rent Image Positioning */
+  .a-louer {
+    position: absolute;
+    top: 15px;
+    left: 73%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    overflow: hidden;
   }
 
-}
-
-
-
-
-/* Header.css */
-.a-louer {
-  position: absolute;
-  top: 3px; /* Ajustez cette valeur pour positionner l'image au-dessus de la navbar */
-  left: 70%; /* Centrer horizontalement */
-  /* width: 150px;  Ajustez la largeur selon vos besoins */
-  z-index: 1000;  /* Un z-index élevé pour s'assurer que l'image est au-dessus de la navbar */
-}
-
-@media (min-width: 768x) and (max-width: 991px) {
-  .nav-link .a-louer {
-    position: absolute !important;
-    top: 3px !important; /* Ajustez cette valeur pour positionner l'image au-dessus de la navbar */
-    left: 80% !important; /* Centrer horizontalement */
-   /* width: 150px;  Ajustez la largeur selon vos besoins */
-    z-index: 1000;  /* Un z-index élevé pour s'assurer que l'image est au-dessus de la navbar */
+  .a-louer:hover{
+    transform: translateY(-5px);
   }
-}
+  
+  /* Responsive for _ForRent image **/
+    @media (min-width: 1200px) and (max-width: 1600px) {
+      .nav-link .a-louer {
+        left: 80% !important;
+      }
+    }
+
+
+
+
+  
+  
