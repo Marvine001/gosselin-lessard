@@ -1,6 +1,6 @@
 .image-container-land {
     position: relative;
-    background-image: url('../../../../../public/images/properties/banner-land.png');
+    background-image: url('../../../../public/images/properties/banner-land.png');
     background-size: cover;
     background-position: center;
     max-width: 100%;

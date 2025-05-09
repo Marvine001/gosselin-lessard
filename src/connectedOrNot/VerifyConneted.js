@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function VerifyConnected() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
-  const [location, setLocation] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,6 +16,19 @@ function VerifyConnected() {
     window.addEventListener('online', handleOnlineStatus);
     window.addEventListener('offline', handleOnlineStatus);
 
+    // Fonction de géolocalisation (si nécessaire plus tard)
+    const getLocation = () => {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          // Ici vous pourriez utiliser la position plus tard
+          // Par exemple : console.log(position.coords.latitude, position.coords.longitude);
+        },
+        (error) => {
+          console.error('Error fetching location:', error);
+        }
+      );
+    };
+
     if (isOnline) {
       getLocation();
     }
@@ -25,21 +37,7 @@ function VerifyConnected() {
       window.removeEventListener('online', handleOnlineStatus);
       window.removeEventListener('offline', handleOnlineStatus);
     };
-  }, []);
-
-  const getLocation = () => {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-        });
-      },
-      (error) => {
-        console.error('Error fetching location:', error);
-      }
-    );
-  };
+  }, [isOnline]); // Ajout de isOnline dans les dépendances
 
   useEffect(() => {
     if (isOnline === false) {

@@ -104,7 +104,7 @@ const Home = ({
   // Extract reusable components
   const PropertyCard = ({ type, link, image }) => (
     <Card>
-      <Card.Link href={link} className='custom-card-link-home'>
+      <Card.Link href={link} className='-home'>
         <Card.Img 
           variant="top" 
           src={image} 

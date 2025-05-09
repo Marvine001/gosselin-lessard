@@ -13,17 +13,11 @@ const Home = lazy(() => import('./views/pages/home/Home'));
 const About = lazy(() => import('./views/pages/about us/About'));
 const Join = lazy(() => import('./views/pages/join us/Join'));
 
-const Residentiel = lazy(() => import('./views/pages/properties/residentiel/Residentiel'));
-const ForResidentiel = lazy(() => import('./views/pages/properties/residentiel/ForResidentiel'));
+const Properties = lazy(() => import('./views/pages/properties/Properties'));
+const PropertyDetails = lazy(() => import('./views/pages/properties/PropertyDetails'));
 
-const Commercial = lazy(() => import('./views/pages/properties/commercial/Commercial'));
-const ForCommercial = lazy(() => import('./views/pages/properties/commercial/ForCommercial'));
-
-const Industriel = lazy(() => import('./views/pages/properties/industriel/Industriel'));
-const ForIndustriel = lazy(() => import('./views/pages/properties/industriel/ForIndustriel'));
-
-const Terrain = lazy(() => import('./views/pages/properties/terrain/Terrain'));
-const ForTerrain = lazy(() => import('./views/pages/properties/terrain/ForTerrain'));
+const Terrain = lazy(() => import('./views/pages/terrain/Terrain'));
+const ForTerrain = lazy(() => import('./views/pages/terrain/ForTerrain'));
 
 const PromenadeProperties = lazy(() => import('./views/pages/promenade/PromenadeProperties'));
 const PromenadePropertyDetails = lazy(() => import('./views/pages/promenade/PromenadePropertyDetails'));
@@ -43,24 +37,24 @@ function App() {
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
-        <ScrollToTop /> {/* Déplacé à l'intérieur du Router */}
+        <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<VerifyConnected />} />
           
-          {/* Wrap all lazy-loaded components with Suspense */}
+          {/* Route 404 */}
           <Route path="/404" element={
             <Suspense fallback={<LoadingSpinner />}>
               <NotFoundPage />
             </Suspense>
           } />
           
+          {/* Pages principales */}
           <Route path="/home" element={
             <Suspense fallback={<LoadingSpinner />}>
               <Home />
             </Suspense>
           } />
           
-          {/* Regroupement de routes similaires */}
           <Route path="/about_us" element={
             <Suspense fallback={<LoadingSpinner />}>
               <About />
@@ -73,43 +67,20 @@ function App() {
             </Suspense>
           } />
           
-          {/* Routes pour les propriétés immobilières */}
-          <Route path="/residential" element={
+         {/* Routes unifiées pour les propriétés */}
+         <Route path="/properties/:type" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <Residentiel />
+              <Properties />
             </Suspense>
           } />
           
-          <Route path="/ForResidential/:propertyId" element={
+          <Route path="/property/:type/:propertyId" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <ForResidentiel />
+              <PropertyDetails />
             </Suspense>
           } />
           
-          <Route path="/commercial" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Commercial />
-            </Suspense>
-          } />
-          
-          <Route path="/ForCommercial/:propertyId" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ForCommercial />
-            </Suspense>
-          } />
-          
-          <Route path="/industrial" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Industriel />
-            </Suspense>
-          } />
-          
-          <Route path="/ForIndustrial/:propertyId" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ForIndustriel />
-            </Suspense>
-          } />
-          
+          {/* Routes pour terrains (structure différente) */}
           <Route path="/land" element={
             <Suspense fallback={<LoadingSpinner />}>
               <Terrain />
@@ -122,7 +93,7 @@ function App() {
             </Suspense>
           } />
           
-          {/* Routes Promenade unifiées avec paramètres dynamiques */}
+          {/* Routes Promenade unifiées */}
           <Route path="/promenade/:type" element={
             <Suspense fallback={<LoadingSpinner />}>
               <PromenadeProperties />
@@ -135,6 +106,7 @@ function App() {
             </Suspense>
           } />
 
+          {/* Routes pour location: A louer */}
           <Route path="/rent" element={
             <Suspense fallback={<LoadingSpinner />}>
               <Rent />

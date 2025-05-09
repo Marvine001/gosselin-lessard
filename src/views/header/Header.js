@@ -25,7 +25,7 @@ const Header = () => {
 
   // Check if a page is active for navigation links
   const isActive = (path) => activePage === path;
-  const isPropertyActive = () => ['/residential', '/commercial', '/industrial', '/land'].includes(activePage);
+  const isPropertyActive = () => ['/properties/residential', '/properties/commercial', '/properties/industrial', '/land'].includes(activePage);
 
   return (
     <nav className='bg-black w-auto'>
@@ -66,23 +66,23 @@ const Header = () => {
                 className={`text-white px-3 nav-link-custom ${isPropertyActive() ? 'active' : ''}`}
               >
                 <NavDropdown.Item 
-                  href="/residential" 
+                  href="/properties/residential" 
                   className="dropdown-item-custom" 
-                  onClick={() => handleNavClick('/residential')}
+                  onClick={() => handleNavClick('/properties/residential')}
                 >
                   Résidentiel
                 </NavDropdown.Item>
                 <NavDropdown.Item 
-                  href="/commercial" 
+                  href="/properties/commercial" 
                   className="dropdown-item-custom" 
-                  onClick={() => handleNavClick('/commercial')}
+                  onClick={() => handleNavClick('/properties/commercial')}
                 >
                   Commercial
                 </NavDropdown.Item>
                 <NavDropdown.Item 
-                  href="/industrial" 
+                  href="/properties/industrial" 
                   className="dropdown-item-custom" 
-                  onClick={() => handleNavClick('/industrial')}
+                  onClick={() => handleNavClick('/properties/industrial')}
                 >
                   INDUSTRIEL
                 </NavDropdown.Item>

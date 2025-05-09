@@ -25,7 +25,7 @@
 }
 
 
-/********************      Colors     **********************************/
+/******************** Colors **********************************/
 .black {
   color: #000000;
 }
@@ -52,7 +52,7 @@
   background-color: #e42526 !important; 
 }
 
-/*************************        *****************************/
+/************************* Utilities *****************************/
 .uppercase {
   text-transform: uppercase;
 }
@@ -65,21 +65,21 @@
   font-family: "Open Sans", sans-serif !important;
 }
 
-/******************* Media query pour appareils mobiles *************************/
+/******************* Media query des banners pour appareils mobiles *************************/
 @media (max-width: 768px) {
-  .image-query {
-    height: 15rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
-    max-width: 100% ;
-  }
-}
-@media (min-width:768px) and (max-width: 992px) {
   .image-query {
     height: 20rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
     max-width: 100% ;
   }
 }
+@media (min-width:768px) and (max-width: 992px) {
+  .image-query {
+    height: 30rem !important; /* La hauteur sera automatiquement ajustée sur les mobiles */
+    max-width: 100% ;
+  }
+}
 
-/* custom mon card link */
+/************** custom mon card link: PropertiesJs, RentJs, PromenadePropertiesJs ****************************/
 .custom-card-link {
   color: inherit; /* Utiliser la couleur héritée du parent */
   text-decoration: none; /* Enlever la décoration de texte */
@@ -90,6 +90,19 @@
   text-decoration: none; /* Enlever la décoration de texte lors du survol */
 }
 
+.property-card {
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/************** For banners titles *********************/
 .nowrap {
   white-space: nowrap;
 }
@@ -99,7 +112,7 @@
   }
 }
 
-/* For page ForResidentiel.js et les autres properties etc. */
+/******************** For each details pages etc. ******************/
 .second-carousel {
   display: flex;
   overflow-x: auto;
@@ -127,16 +140,4 @@
 }
 
 
-/******* For residentiel.js  commercial.js industriel.js  terain.js****/ 
-.property-card {
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.property-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 

@@ -36,7 +36,7 @@ const CATEGORY_CONFIG = {
 
 // Fonction utilitaire pour vérifier la disponibilité
 const isAvailable = (availability) => {
-  return ["Oui", "Yes", "Immédiatement"].includes(availability);
+  return ["Oui", "Yes", "Immédiatement","Disponible"].includes(availability);
 };
 
 // Fonction pour formater l'adresse selon le nouveau format

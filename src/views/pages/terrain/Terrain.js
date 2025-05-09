@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Terrain.css'
 import { Row, Col, Container, Card } from 'react-bootstrap'
-import Header from '../../../header/Header'
-import Footer from '../../../footer/Footer'
+import Header from '../../header/Header'
+import Footer from '../../footer/Footer'
 
 class Terrain extends Component {
 

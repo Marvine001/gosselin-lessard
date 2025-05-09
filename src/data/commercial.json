@@ -16,7 +16,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 17086,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -47,7 +47,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 5950,
-      "availability": "Oui",
+      "availability": "Non",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -78,7 +78,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 12500,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -109,7 +109,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 12000,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -140,7 +140,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 20300,
-      "availability": "Oui",
+      "availability": "Non",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -171,7 +171,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 10000,
-      "availability": "Oui",
+      "availability": "Non",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -202,7 +202,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 0,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -233,7 +233,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 0,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -264,7 +264,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 1200,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",
@@ -295,7 +295,7 @@
       "price": "",
       "description": "Espace commercial idéalement situé sur un boulevard achalandé. Parfait pour commerce de détail ou bureau professionnel.",
       "squareFeet": 2000,
-      "availability": "Oui",
+      "availability": "Non",
       "dateAvailabilty": "",
       "images": [
         "/images/properties/image-properties.png",

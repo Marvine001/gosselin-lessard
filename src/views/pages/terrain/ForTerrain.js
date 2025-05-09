@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Terrain.css'
-import Header from '../../../header/Header';
-import Footer from '../../../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 import { Col, Container, Row, Carousel, Collapse, Button } from 'react-bootstrap';
 import { IoIosAddCircleOutline } from "react-icons/io"
 import { IoIosRemoveCircleOutline } from "react-icons/io"

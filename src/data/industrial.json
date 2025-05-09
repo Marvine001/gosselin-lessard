@@ -16,7 +16,7 @@
       "price": "",
       "description": "Bâtiment industriel spacieux idéal pour manufacture légère, entreposage ou atelier. Excellente localisation dans la zone industrielle de Thetford Mines.",
       "squareFeet": 4500,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailability":"",
       "images": [
         "/images/properties/image-properties.png",
@@ -47,7 +47,7 @@
       "price": "",
       "description": "Grand complexe industriel modulable selon vos besoins. Parfait pour entreprise manufacturière, logistique ou entreposage à grande échelle.",
       "squareFeet": 8750,
-      "availability": "Oui",
+      "availability": "Disponible",
       "dateAvailability":"1er septembre 2025",
       "images": [
         "/images/properties/image-properties.png",

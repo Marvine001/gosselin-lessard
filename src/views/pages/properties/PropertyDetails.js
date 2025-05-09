@@ -1,14 +1,31 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Industriel.css';
-import Header from '../../../header/Header';
-import Footer from '../../../footer/Footer';
+import './Properties.css';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 import { Col, Container, Row, Carousel, Button, Spinner } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
-// Importer les données directement
-import industrialData from '../../../../data/industrial.json';
 
-const ForIndustrial= () => {
-    const { propertyId } = useParams();
+// Import des données
+import residentialData from '../../../data/residential.json';
+import commercialData from '../../../data/commercial.json';
+import industrialData from '../../../data/industrial.json';
+
+// Déplacer dataMap en dehors du composant pour éviter de le recréer à chaque rendu
+const dataMap = {
+    residential: residentialData,
+    commercial: commercialData,
+    industrial: industrialData
+};
+
+// Déplacer spaceTypeMap en dehors du composant également
+const spaceTypeMap = {
+    residential: 'Espace résidentiel',
+    commercial: 'Espace commercial',
+    industrial: 'Espace industriel'
+};
+
+const PropertyDetails = () => {
+    const { type, propertyId } = useParams();
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('photos');
     const [index, setIndex] = useState(0);
@@ -16,20 +33,29 @@ const ForIndustrial= () => {
     const [property, setProperty] = useState(null);
     const imageRefs = useRef([]);
     
-    // Utiliser useEffect pour charger la propriété de manière sécurisée
     useEffect(() => {
         setLoading(true);
+        
+        // Obtenir les données pour le type actuel
+        const currentData = dataMap[type];
+        
+        if (!currentData) {
+            navigate('/home');
+            setLoading(false);
+            return;
+        }
+        
         // Rechercher la propriété par ID
-        const foundProperty = industrialData.properties.find(p => p.id === parseInt(propertyId));
+        const foundProperty = currentData.properties.find(p => p.id === parseInt(propertyId));
         
         if (foundProperty) {
             setProperty(foundProperty);
         } else {
-            // Rediriger si la propriété n'existe pas
-            navigate('/industrial');
+            // Rediriger vers la liste des propriétés du type
+            navigate(`/properties/${type}`);
         }
         setLoading(false);
-    }, [propertyId, navigate]);
+    }, [propertyId, type, navigate]); // Maintenant nous n'avons plus besoin de dataMap dans les dépendances
     
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
@@ -60,7 +86,7 @@ const ForIndustrial= () => {
         );
     }
 
-    // Si la propriété n'est pas trouvée et que la redirection n'a pas encore eu lieu
+    // Si la propriété n'est pas trouvée
     if (!property) {
         return (
             <div className="bg-black text-white d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
@@ -68,6 +94,10 @@ const ForIndustrial= () => {
             </div>
         );
     }
+
+    // Construire l'adresse complète en format uppercase
+    const fullAddress = `${property.address.adresse}, ${property.address.ville}, ${property.address.province} ${property.address.codePostale}`.toUpperCase();
+
 
     return (
         <div className='bg-black'>
@@ -147,7 +177,7 @@ const ForIndustrial= () => {
                             md={{ span: 12, order: 2 }}
                             lg={{ span: 4, order: 2 }}
                             className='text-white p-3'>
-                            <h3 className='uppercase'>{property.address}</h3>
+                            <h3 className='uppercase'>{fullAddress}</h3>
                             <hr className='white'></hr>
                             <p className='justify'>
                                 {property.description}
@@ -177,7 +207,7 @@ const ForIndustrial= () => {
 
                     <Row className='bg-blue text-white text-center uppercase py-4'>
                         <Col xs={12} md={12} lg={12}>
-                            <span className='fs-5'>Espace industriel</span>
+                            <span className='fs-5'>{spaceTypeMap[type]}</span>
                         </Col>
                     </Row>
 
@@ -197,4 +227,4 @@ const ForIndustrial= () => {
     );
 };
 
-export default ForIndustrial;
+export default PropertyDetails;
