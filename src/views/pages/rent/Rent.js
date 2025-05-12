@@ -130,12 +130,13 @@ const Rent = () => {
               <div className="rent-badge">Disponible</div>
             )}
             
-            <Card.Img
-              variant="top"
-              src={property.imageUrl}
-              alt={`Propriété ${property.title}`}
-              className="img-fluid"
-            />
+            <div className="ratio ratio-4x3">
+              <Card.Img
+                src={property.imageUrl}
+                alt={`Propriété ${property.title}`}
+                className="img-fluid object-fit-cover"
+              />
+            </div>
             
             <Card.Body className="bg-gray">
               <Card.Text className="mb-1">

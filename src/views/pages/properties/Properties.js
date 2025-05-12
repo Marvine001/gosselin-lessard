@@ -68,12 +68,13 @@ const Properties = () => {
                     onClick={() => handlePropertyClick(property.id)}
                     style={{ cursor: 'pointer' }}
                   >
-                    <Card.Img
-                      variant="top"
-                      src={property.imageUrl}
-                      alt={`Propriété ${property.title}`}
-                      className="img-fluid"
-                    />
+                    <div className="ratio ratio-4x3">
+                      <Card.Img
+                        src={property.imageUrl}
+                        alt={`Propriété ${property.title}`}
+                        className="img-fluid object-fit-cover"
+                      />
+                    </div>
                     <Card.Body className="bg-gray">
                       <Card.Text className="mb-1">
                         <span className="badge bg-primary me-2">{property.title}</span>

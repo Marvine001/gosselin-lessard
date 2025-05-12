@@ -34,7 +34,7 @@ const PromenadeProperties = () => {
         <Row className="m-0">
           <Col className="image-container-promenade image-query p-0">
             <div className="image-title-promenade">
-              <h2 className="text-white text-uppercase fw-bold fs-1">Promenade Black Lake</h2>
+              <h2 className="text-white text-uppercase fw-bold fs-1">Promenade Black Lake - {type}</h2>
             </div>
           </Col>
         </Row>
@@ -50,12 +50,13 @@ const PromenadeProperties = () => {
                     onClick={() => handlePropertyClick(property.id)}
                     style={{ cursor: 'pointer' }}
                   >
-                    <Card.Img
-                      variant="top"
-                      src={property.imageUrl}
-                      alt={`Propriété ${property.title}`}
-                      className="img-fluid"
-                    />
+                    <div className="ratio ratio-4x3">
+                      <Card.Img
+                        src={property.imageUrl}
+                        alt={`Propriété ${property.title}`}
+                        className="img-fluid object-fit-cover"
+                      />
+                    </div>
                     <Card.Body className="bg-blue">
                       <Card.Title className="text-white text-center m-0">
                         {property.name ? property.name : property.title}

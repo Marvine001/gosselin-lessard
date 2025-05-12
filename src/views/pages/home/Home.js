@@ -15,21 +15,21 @@ const Home = ({
   const defaultCarouselHeroItems = carouselHeroItems.length > 0 ? carouselHeroItems : [
     {
       id: 1,
-      image: `${process.env.PUBLIC_URL}/images/home/background_accueil.png`,
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`,
       title: 'GOSSELIN LESSARD \nIMMOBILIER, \nUNE QUESTION DE VALEURS',
       buttonText: 'En savoir plus',
       buttonLink: '/about_us'
     },
     {
       id: 2,
-      image: `${process.env.PUBLIC_URL}/images/home/background_accueil.png`,
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`,
       title: 'GOSSELIN LESSARD \nIMMOBILIER, \nUNE QUESTION DE VALEURS',
       buttonText: 'En savoir plus',
       buttonLink: '/about_us'
     },
     {
       id: 3,
-      image: `${process.env.PUBLIC_URL}/images/home/background_accueil.png`,
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`,
       title: 'GOSSELIN LESSARD \nIMMOBILIER, \nUNE QUESTION DE VALEURS',
       buttonText: 'En savoir plus',
       buttonLink: '/about_us'
@@ -58,25 +58,25 @@ const Home = ({
       id: 1,
       type: 'Immeubles résidentiels',
       link: '/residential',
-      image: `${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`
     },
     {
       id: 2,
       type: 'Immeubles commerciaux',
       link: '/commercial',
-      image: `${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`
     },
     {
       id: 3,
       type: 'Immeubles industriels',
       link: '/industrial',
-      image: `${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`
     },
     {
       id: 4,
       type: 'Terrains',
       link: '/land',
-      image: `${process.env.PUBLIC_URL}/images/home/accueil_carousel.png`
+      image: `${process.env.PUBLIC_URL}/images/properties/home-2.png`
     }
   ];
 

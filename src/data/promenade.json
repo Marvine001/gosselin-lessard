@@ -7,7 +7,7 @@
       "category": "residentiel",
       "categoryLabel": "Résidentiel",
       "location": "Thetford Mines",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/3820-3840.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7G7",
@@ -19,11 +19,10 @@
       "availability": "Non",
       "dateAvailability": "",
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png"
       ],
       "mapLocation": {
         "lat": 46.09783,
@@ -38,7 +37,7 @@
       "category": "residentiel",
       "categoryLabel": "Résidentiel",
       "location": "Thetford Mines",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/3820-3840.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7G7",
@@ -50,11 +49,10 @@
       "availability": "Non",
       "dateAvailability": "",
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png",
+        "/images/properties/3820-3840.png"
       ],
       "mapLocation": {
         "lat": 46.09763,
@@ -69,7 +67,7 @@
       "category": "residentiel",
       "categoryLabel": "Résidentiel",
       "location": "Thetford Mines",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/3774.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7G6",
@@ -81,11 +79,10 @@
       "availability": "Immédiatement",
       "dateAvailability": "",
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png"
       ],
       "mapLocation": {
         "lat": 46.09813,
@@ -99,7 +96,7 @@
       "category": "commercial",
       "categoryLabel": "Commercial",
       "location": "Thetford Mines",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/3774.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7G6",
@@ -112,11 +109,10 @@
       "dateAvailability": "",
       "squareFeet": 17086,
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png"
       ],
       "mapLocation": {
         "lat": 46.09813,
@@ -130,7 +126,7 @@
       "category": "commercial",
       "categoryLabel": "Commercial",
       "location": "Thetford Mines",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/3774.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7G7",
@@ -143,11 +139,10 @@
       "dateAvailability": "",
       "squareFeet": 17086,
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png",
+        "/images/properties/3774.png"
       ],
       "mapLocation": {
         "lat": 46.09773,

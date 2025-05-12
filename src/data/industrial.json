@@ -6,7 +6,7 @@
       "category": "industriel",
       "categoryLabel": "Industriel",
       "location": "Thetford Mines\n47 Gagné",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/47-1.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 6S5",
@@ -19,11 +19,11 @@
       "availability": "Disponible",
       "dateAvailability":"",
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/47-1.png",
+        "/images/properties/47-2.png",
+        "/images/properties/47-2.png",
+        "/images/properties/47-2.png",
+        "/images/properties/47-2.png"
       ],
       "mapLocation": {
         "lat": 46.084123,
@@ -37,7 +37,7 @@
       "category": "industriel",
       "categoryLabel": "Industriel",
       "location": "Thetford Mines\n759 Caouette Ouest",
-      "imageUrl": "/images/properties/image-properties.png",
+      "imageUrl": "/images/properties/759-2.png",
       "address": {
         "ville": "Thetford Mines",
         "codePostale": "G6G 7M9",
@@ -50,11 +50,10 @@
       "availability": "Disponible",
       "dateAvailability":"1er septembre 2025",
       "images": [
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png",
-        "/images/properties/image-properties.png"
+        "/images/properties/759-2.png",
+        "/images/properties/759-2.png",
+        "/images/properties/759-2.png",
+        "/images/properties/759-2.png"
       ],
       "mapLocation": {
         "lat": 46.079456,
